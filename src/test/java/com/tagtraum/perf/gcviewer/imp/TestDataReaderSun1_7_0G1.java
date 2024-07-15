@@ -255,9 +255,9 @@ public class TestDataReaderSun1_7_0G1 {
 
         InputStream in = new ByteArrayInputStream(
                 ("2012-07-26T15:24:21.845+0200: 3.100: [GC concurrent-root-region-scan-end, 0.0000680]" +
-                 "\n2012-07-26T14:58:58.320+0200Application time: 0.0000221 seconds" +
-                        "\n: 7.907: [GC concurrent-mark-start]")
-                .getBytes());
+                        "\n2012-07-26T14:58:58.320+0200Application time: 0.0000221 seconds" +
+                        "\n2012-07-26T14:58:58.320+0200: 7.907: [GC concurrent-mark-start]")
+                        .getBytes());
 
         DataReader reader = new DataReaderSun1_6_0G1(gcResource, in, GcLogType.SUN1_7G1);
         GCModel model = reader.read();
@@ -267,9 +267,7 @@ public class TestDataReaderSun1_7_0G1 {
         assertThat("gc type (0)", "GC concurrent-root-region-scan-end", equalTo(model.get(0).getTypeAsString()));
         assertThat("gc timestamp (0)", model.get(0).getTimestamp(), closeTo(3.1, 0.01));
         assertThat("gc type (1)", "GC concurrent-mark-start", equalTo(model.get(1).getTypeAsString()));
-
-        // should be 7.907, but line starts with ":", so timestamp of previous event is taken
-        assertThat("gc timestamp (1)", model.get(1).getTimestamp(), closeTo(3.1, 0.0001));
+        assertThat("gc timestamp (1)", model.get(1).getTimestamp(), closeTo(7.907, 0.0001));
         assertThat("number of errors", handler.getCount(), is(0));
     }
 

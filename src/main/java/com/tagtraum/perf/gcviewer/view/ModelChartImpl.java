@@ -819,6 +819,13 @@ public class ModelChartImpl extends JScrollPane implements ModelChart, ChangeLis
         }
     }
 
+    @Override
+    public void updateDisplayProperties(ModelChart chart) {
+        // Implement the method functionality here
+        System.out.println("Updating display properties for the chart.");
+        // Add specific logic to update display properties of the chart
+    }
+
     private void fireScaleFactorChangedEvent(double oldScaleFactor, double scaleFactor) {
         firePropertyChange(PropertyChangeEventConsts.MODELCHART_SCALEFACTOR_CHANGED,
                 oldScaleFactor,

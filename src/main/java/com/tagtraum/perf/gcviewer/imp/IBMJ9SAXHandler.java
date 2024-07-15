@@ -1,6 +1,6 @@
 /*
  * =================================================
- * Copyright 2007 Justin Kilimnik (IBM UK) 
+ * Copyright 2007 Justin Kilimnik (IBM UK)
  * All rights reserved.
  * =================================================
  */
@@ -25,7 +25,7 @@ import org.xml.sax.helpers.DefaultHandler;
 /**
  * Simple (only for the -Xgcpolicy:optthruput output) IBMJ9 verbose GC reader.
  * Implemented as a SAX parser since XML based.
- * 
+ *
  * @author <a href="mailto:justink@au1.ibm.com">Justin Kilimnik (IBM)</a>
  */
 public class IBMJ9SAXHandler extends DefaultHandler {
@@ -46,11 +46,11 @@ public class IBMJ9SAXHandler extends DefaultHandler {
     private Logger getLogger() {
         return gcResource.getLogger();
     }
-    
+
     protected Date parseTime(String ts) throws ParseException {
         try {
             return current.parse(ts);
-        } 
+        }
         catch (ParseException e) {
             if (current != cycleStartGCFormat6) {
 
@@ -61,161 +61,143 @@ public class IBMJ9SAXHandler extends DefaultHandler {
         }
     }
 
-    public void startElement(String namespaceURI, String sName, String qName,
-            Attributes attrs) throws SAXException {
+    private long parseLongAttribute(Attributes attrs, String attributeName) {
+        String valueStr = attrs.getValue(attributeName);
+        if (valueStr != null) {
+            return Long.parseLong(valueStr);
+        }
+        return -1;
+    }
+
+
+    public void startElement(String namespaceURI, String sName, String qName, Attributes attrs) throws SAXException {
         try {
-            // System.out.println("START: [" + qName + "]");
-            if (currentAF == null) {
-
-                if ("af".equals(qName)) {
-                    currentAF = new AF();
-                    String type = attrs.getValue("type");
-                    String id = attrs.getValue("id");
-                    String ts = attrs.getValue("timestamp");
-                    currentAF.id = id;
-                    currentAF.type = type;
-                    final Date date = parseTime(ts);
-                    currentAF.timestamp = date;
-                    if (begin == null) {
-                        begin = date;
-                        currentAF.elapsedTime = 0L;
-                    } 
-                    else {
-                        currentAF.elapsedTime = (currentAF.timestamp.getTime() - begin
-                                .getTime()) / 1000;
-                        System.out.println("ElapsedTime: "
-                                + currentAF.elapsedTime);
-                    }
-                    // System.out.println("START: [af, " + type + "]");
-
-                }
-            } 
-            else if (currentAF != null) {
-                if ("time".equals(qName)) {
-                    // String pauseStr = attrs.getValue("exclusiveaccessms");
-                    // double pause = -1D;
-                    // if(pauseStr != null){
-                    // pause = NumberParser.parseDouble(pauseStr);
-                    // currentAF.totalTime = pause/1000;
-                    // }
-
-                    String totalStr = attrs.getValue("totalms");
-                    double total = -1D;
-                    if (totalStr != null) {
-                        total = NumberParser.parseDouble(totalStr);
-                        currentAF.totalTime = total / 1000;
-                    }
-
-                } 
-                else if ("gc".equals(qName)) {
-                    String type = attrs.getValue("type");
-                    currentAF.gcType = type;
-                } 
-                else if ("timesms".equals(qName)) {
-                    String markStr = attrs.getValue("mark");
-                    double mark = -1D;
-                    if (markStr != null) {
-                        mark = NumberParser.parseDouble(markStr);
-                        currentAF.gcTimeMark = mark;
-                    }
-                    String sweepStr = attrs.getValue("sweep");
-                    double sweep = -1D;
-                    if (sweepStr != null) {
-                        mark = NumberParser.parseDouble(sweepStr);
-                        currentAF.gcTimeSweep = sweep;
-                    }
-                }
-                else if ("tenured".equals(qName)) {
-                    currentTenured++;
-                    String freeStr = attrs.getValue("freebytes");
-                    long free = -1;
-                    if (freeStr != null) {
-                        free = Long.parseLong(freeStr);
-                    }
-                    String totalStr = attrs.getValue("totalbytes");
-                    long total = -1;
-                    if (totalStr != null) {
-                        total = Long.parseLong(totalStr);
-                    }
-
-                    // For now only care about Total - don't break into SOA and
-                    // LOA
-                    if (currentTenured == 1) {
-                        currentAF.initialFreeBytes = free;
-                        currentAF.initialTotalBytes = total;
-                    } 
-                    else if (currentTenured == 2) {
-                        // ignore
-                    }
-                    else if (currentTenured == 3) {
-                        currentAF.afterFreeBytes = free;
-                        currentAF.afterTotalBytes = total;
-                    } 
-                    else {
-                        getLogger().warning("currentTenured is > 3!");
-                    }
-                }
-                else if ("soa".equals(qName)) {
-                    String freeStr = attrs.getValue("freebytes");
-                    long free = -1;
-                    if (freeStr != null) {
-                        free = Long.parseLong(freeStr);
-                    }
-                    String totalStr = attrs.getValue("totalbytes");
-                    long total = -1;
-                    if (totalStr != null) {
-                        total = Long.parseLong(totalStr);
-                    }
-
-                    if (currentTenured == 1) {
-                        currentAF.initialSOAFreeBytes = free;
-                        currentAF.initialSOATotalBytes = total;
-                    }
-                    else if (currentTenured == 2) {
-                        // ignore
-                    }
-                    else if (currentTenured == 3) {
-                        currentAF.afterSOAFreeBytes = free;
-                        currentAF.afterSOATotalBytes = total;
-                    }
-                    else {
-                        getLogger().warning("currentTenured is > 3!");
-                    }
-                } 
-                else if ("loa".equals(qName)) {
-                    String freeStr = attrs.getValue("freebytes");
-                    long free = -1;
-                    if (freeStr != null) {
-                        free = Long.parseLong(freeStr);
-                    }
-                    String totalStr = attrs.getValue("totalbytes");
-                    long total = -1;
-                    if (totalStr != null) {
-                        total = Long.parseLong(totalStr);
-                    }
-
-                    if (currentTenured == 1) {
-                        currentAF.initialLOAFreeBytes = free;
-                        currentAF.initialLOATotalBytes = total;
-                    } 
-                    else if (currentTenured == 2) {
-                        // ignore
-                    } 
-                    else if (currentTenured == 3) {
-                        currentAF.afterLOAFreeBytes = free;
-                        currentAF.afterLOATotalBytes = total;
-                    } 
-                    else {
-                        getLogger().warning("currentTenured is > 3!");
-                    }
-                }
-            }
-
-        } 
-        catch (ParseException e) {
-            e.printStackTrace();
+            handleAFElement(qName, attrs);
+        } catch (ParseException e) {
+            handleParseException(e, qName, attrs);
+        } catch (NumberFormatException e) {
+            handleNumberFormatException(e, qName);
         }
     }
+
+    private void handleAFElement(String qName, Attributes attrs) throws ParseException {
+        if (currentAF == null && "af".equals(qName)) {
+            handleAFStart(attrs);
+        } else if (currentAF != null) {
+            switch (qName) {
+                case "time":
+                    handleTimeElement(attrs);
+                    break;
+                case "gc":
+                    handleGCElement(attrs);
+                    break;
+                case "timesms":
+                    handleTimesmsElement(attrs);
+                    break;
+                case "tenured":
+                    handleTenuredElement(attrs);
+                    break;
+                case "soa":
+                    handleSOAElement(attrs);
+                    break;
+                case "loa":
+                    handleLOAElement(attrs);
+                    break;
+                default:
+                    getLogger().warning("Unhandled element: " + qName);
+                    break;
+            }
+        }
+    }
+
+    private void handleAFStart(Attributes attrs) throws ParseException {
+        currentAF = new AF();
+        currentAF.id = attrs.getValue("id");
+        currentAF.type = attrs.getValue("type");
+        currentAF.timestamp = parseTime(attrs.getValue("timestamp"));
+
+        if (begin == null) {
+            begin = currentAF.timestamp;
+            currentAF.elapsedTime = 0L;
+        } else {
+            currentAF.elapsedTime = (currentAF.timestamp.getTime() - begin.getTime()) / 1000;
+            System.out.println("ElapsedTime: " + currentAF.elapsedTime);
+        }
+    }
+
+    private void handleTimeElement(Attributes attrs) {
+        String totalMs = attrs.getValue("totalms");
+        if (totalMs != null) {
+            currentAF.totalTime = NumberParser.parseDouble(totalMs) / 1000;
+        }
+    }
+
+    private void handleGCElement(Attributes attrs) {
+        currentAF.gcType = attrs.getValue("type");
+    }
+
+    private void handleTimesmsElement(Attributes attrs) {
+        String mark = attrs.getValue("mark");
+        String sweep = attrs.getValue("sweep");
+        if (mark != null && sweep != null) {
+            currentAF.gcTimeMark = NumberParser.parseDouble(mark);
+            currentAF.gcTimeSweep = NumberParser.parseDouble(sweep);
+        }
+    }
+
+    private void handleTenuredElement(Attributes attrs) {
+        currentTenured++;
+        if (currentTenured == 1) {
+            currentAF.initialFreeBytes = parseLongAttribute(attrs, "freebytes");
+            currentAF.initialTotalBytes = parseLongAttribute(attrs, "totalbytes");
+        } else if (currentTenured == 3) {
+            currentAF.afterFreeBytes = parseLongAttribute(attrs, "freebytes");
+            currentAF.afterTotalBytes = parseLongAttribute(attrs, "totalbytes");
+        }
+    }
+
+    private void handleSOAElement(Attributes attrs) {
+        if (currentTenured == 1) {
+            currentAF.initialSOAFreeBytes = parseLongAttribute(attrs, "freebytes");
+            currentAF.initialSOATotalBytes = parseLongAttribute(attrs, "totalbytes");
+        } else if (currentTenured == 3) {
+            currentAF.afterSOAFreeBytes = parseLongAttribute(attrs, "freebytes");
+            currentAF.afterSOATotalBytes = parseLongAttribute(attrs, "totalbytes");
+        }
+    }
+
+    private void handleLOAElement(Attributes attrs) {
+        if (currentTenured == 1) {
+            currentAF.initialLOAFreeBytes = parseLongAttribute(attrs, "freebytes");
+            currentAF.initialLOATotalBytes = parseLongAttribute(attrs, "totalbytes");
+        } else if (currentTenured == 3) {
+            currentAF.afterLOAFreeBytes = parseLongAttribute(attrs, "freebytes");
+            currentAF.afterLOATotalBytes = parseLongAttribute(attrs, "totalbytes");
+        }
+    }
+
+    private void handleParseException(ParseException e, String qName, Attributes attrs) {
+        if (current != cycleStartGCFormat6) {
+            current = cycleStartGCFormat6;
+            try {
+                if (attrs != null) {
+                    parseTime(attrs.getValue("timestamp"));
+                } else {
+                    getLogger().warning("Attributes are null in handleParseException");
+                }
+            } catch (ParseException parseException) {
+                parseException.printStackTrace();
+            }
+        }
+        e.printStackTrace();
+    }
+
+
+    private void handleNumberFormatException(NumberFormatException e, String qName) {
+        getLogger().warning("Error parsing number in element: " + qName);
+        e.printStackTrace();
+    }
+
 
     public void endElement(String namespaceURI, String simpleName,
             String qualifiedName) throws SAXException {
@@ -229,7 +211,7 @@ public class IBMJ9SAXHandler extends DefaultHandler {
                 }
                 if (!"global".equals(currentAF.gcType)) {
                     getLogger().warning("Different GC type: " + currentAF.gcType);
-                } 
+                }
                 else {
                     event.setType(AbstractGCEvent.Type.FULL_GC);
                 }
@@ -258,7 +240,7 @@ public class IBMJ9SAXHandler extends DefaultHandler {
                         && currentAF.afterSOAFreeBytes != -1
                         && currentAF.initialSOAFreeBytes != -1
                         && currentAF.initialSOATotalBytes != -1) {
-                    
+
                     final GCEvent detailEvent = new GCEvent();
                     detailEvent.setTimestamp(currentAF.elapsedTime);
                     detailEvent.setType(AbstractGCEvent.Type.PS_YOUNG_GEN);
@@ -272,7 +254,7 @@ public class IBMJ9SAXHandler extends DefaultHandler {
                         && currentAF.afterLOAFreeBytes != -1
                         && currentAF.initialLOAFreeBytes != -1
                         && currentAF.initialLOATotalBytes != -1) {
-                    
+
                     final GCEvent detailEvent = new GCEvent();
                     detailEvent.setTimestamp(currentAF.elapsedTime);
                     detailEvent.setType(AbstractGCEvent.Type.PS_OLD_GEN);
@@ -285,7 +267,7 @@ public class IBMJ9SAXHandler extends DefaultHandler {
                 model.add(event);
                 currentTenured = 0;
                 currentAF = null;
-            } 
+            }
             else {
                 getLogger().warning("Found end <af> tag with no begin tag");
             }

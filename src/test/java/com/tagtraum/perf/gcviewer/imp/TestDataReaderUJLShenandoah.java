@@ -348,7 +348,7 @@ public class TestDataReaderUJLShenandoah {
 
     @Test
     public void testPauseFinalRoots() throws Exception {
-        String logString = "[2022-08-17T00:34:06.286+0800][2.637s][info][gc,start    ] GC(2) Pause Final Roots\n" + 
+        String logString = "[2022-08-17T00:34:06.286+0800][2.637s][info][gc,start    ] GC(2) Pause Final Roots\n" +
                 "[2022-08-17T00:34:06.286+0800][2.637s][info][gc          ] GC(2) Pause Final Roots 0.015ms\n";
 
         GCModel model = getGCModelFromLogString(logString);

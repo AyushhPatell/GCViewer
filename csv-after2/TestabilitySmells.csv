@@ -1,0 +1,17 @@
+Project Name,Package Name,Type Name,Testability Smell,Cause of the Smell
+gcviewer,com.tagtraum.perf.gcviewer.imp,AbstractDataReaderSun,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 8
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderFacade,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 12
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0G1,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 10
+gcviewer,com.tagtraum.perf.gcviewer,GCViewer,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 8
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiController,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 8
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCModelLoaderControllerImpl,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 10
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiBuilder,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 14
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.action,Export,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 9
+gcviewer,com.tagtraum.perf.gcviewer.model,GCModel,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 8
+gcviewer,com.tagtraum.perf.gcviewer.model,GCModel.Format,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+gcviewer,com.tagtraum.perf.gcviewer.model,AbstractGCEvent.ExtendedType,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+gcviewer,com.tagtraum.perf.gcviewer.model,AbstractGCEvent.Type,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+gcviewer,com.tagtraum.perf.gcviewer.view.renderer,PolygonChartRenderer.ScaledPolygon,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+gcviewer,com.tagtraum.perf.gcviewer.view,ChartPanelView,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 9
+gcviewer,com.tagtraum.perf.gcviewer.view,GCDocument,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 8
+gcviewer,com.tagtraum.perf.gcviewer.view,ModelChartImpl,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 18

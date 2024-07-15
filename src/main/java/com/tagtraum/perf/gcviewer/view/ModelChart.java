@@ -80,4 +80,6 @@ public interface ModelChart {
 
     boolean isShowDateStamp();
 
+    void updateDisplayProperties(ModelChart modelChart);
+
 }

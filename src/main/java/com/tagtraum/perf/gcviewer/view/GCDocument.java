@@ -55,7 +55,7 @@ public class GCDocument extends JInternalFrame implements PropertyChangeListener
         GridBagLayout layout = new GridBagLayout();
         getContentPane().setLayout(layout);
     }
-    
+
     public boolean isShowModelMetricsPanel() {
         return showModelMetricsPanel;
     }
@@ -90,33 +90,25 @@ public class GCDocument extends JInternalFrame implements PropertyChangeListener
     public GCPreferences getPreferences() {
         return preferences;
     }
-    
+
     public void addChartPanelView(ChartPanelView chartPanelView) {
         chartPanelView.addPropertyChangeListener(new PropertyChangeListener() {
             public void propertyChange(PropertyChangeEvent event) {
                 if (ChartPanelView.EVENT_MINIMIZED.equals(event.getPropertyName())) {
                     relayout();
-                }
-                else if (ChartPanelView.EVENT_CLOSED.equals(event.getPropertyName())) {
+                } else if (ChartPanelView.EVENT_CLOSED.equals(event.getPropertyName())) {
                     removeChartPanelView((ChartPanelView) event.getSource());
                 }
             }
         });
 
         chartPanelViews.add(chartPanelView);
-        
+
         // make sure all models in one document have the same display properties
         if (chartPanelViews.size() > 1) {
-            modelChartListFacade.setScaleFactor(modelChartListFacade.getScaleFactor());
-            modelChartListFacade.setShowFullGCLines(modelChartListFacade.isShowFullGCLines());
-            modelChartListFacade.setShowGCTimesLine(modelChartListFacade.isShowGCTimesLine());
-            modelChartListFacade.setShowGCTimesRectangles(modelChartListFacade.isShowGCTimesRectangles());
-            modelChartListFacade.setShowIncGCLines(modelChartListFacade.isShowIncGCLines());
-            modelChartListFacade.setShowTotalMemoryLine(modelChartListFacade.isShowTotalMemoryLine());
-            modelChartListFacade.setShowUsedMemoryLine(modelChartListFacade.isShowUsedMemoryLine());
-            modelChartListFacade.setShowDateStamp(modelChartListFacade.isShowDateStamp());
+            modelChartListFacade.updateDisplayProperties(modelChartListFacade);
         }
-        
+
         relayout();
     }
     
@@ -611,6 +603,18 @@ public class GCDocument extends JInternalFrame implements PropertyChangeListener
             if (chartPanelViews.isEmpty()) return false;
             return chartPanelViews.get(0).getModelChart().isShowDateStamp();
 
+        }
+
+        @Override
+        public void updateDisplayProperties(ModelChart modelChart) {
+            setScaleFactor(modelChart.getScaleFactor());
+            setShowFullGCLines(modelChart.isShowFullGCLines());
+            setShowGCTimesLine(modelChart.isShowGCTimesLine());
+            setShowGCTimesRectangles(modelChart.isShowGCTimesRectangles());
+            setShowIncGCLines(modelChart.isShowIncGCLines());
+            setShowTotalMemoryLine(modelChart.isShowTotalMemoryLine());
+            setShowUsedMemoryLine(modelChart.isShowUsedMemoryLine());
+            setShowDateStamp(modelChart.isShowDateStamp());
         }
     }
 

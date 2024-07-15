@@ -1,0 +1,314 @@
+Project Name,Package Name,Type Name,Method Name,Implementation Smell,Cause of the Smell,Method start line no
+imp,com.tagtraum.perf.gcviewer.imp,AbstractDataReaderSun,setMemoryExtended,Long Statement,The length of the statement "event.setPreUsed(getMemoryInKiloByte(NumberParser.parseDouble(line`currentPos`endOfNextNumber - currentPos - 1)`line.charAt(endOfNextNumber - 1)`line));" is 152.,107
+imp,com.tagtraum.perf.gcviewer.imp,AbstractDataReaderSun,setMemoryExtended,Long Statement,The length of the statement "event.setPostUsed(getMemoryInKiloByte(NumberParser.parseDouble(line`currentPos`endOfNextNumber - currentPos - 1)`line.charAt(endOfNextNumber - 1)`line));" is 153.,107
+imp,com.tagtraum.perf.gcviewer.imp,AbstractDataReaderSun,setMemoryExtended,Long Statement,The length of the statement "event.setTotal(getMemoryInKiloByte(NumberParser.parseDouble(line`currentPos`endOfNextNumber - currentPos - 1)`line.charAt(endOfNextNumber - 1)`line));" is 150.,107
+imp,com.tagtraum.perf.gcviewer.imp,AbstractDataReaderSun,setMemoryExtended,Magic Number,The method contains a magic number: 2,107
+imp,com.tagtraum.perf.gcviewer.imp,AbstractDataReaderSun,setMemoryExtended,Magic Number,The method contains a magic number: 10,107
+imp,com.tagtraum.perf.gcviewer.imp,AbstractDataReaderSun,setMemory,Magic Number,The method contains a magic number: 2,183
+imp,com.tagtraum.perf.gcviewer.imp,AbstractDataReaderSun,setMemory,Magic Number,The method contains a magic number: 2,183
+imp,com.tagtraum.perf.gcviewer.imp,AbstractDataReaderSun,setMemory,Magic Number,The method contains a magic number: 3,183
+imp,com.tagtraum.perf.gcviewer.imp,AbstractDataReaderSun,setMemory,Magic Number,The method contains a magic number: 2,183
+imp,com.tagtraum.perf.gcviewer.imp,AbstractDataReaderSun,setMemory,Magic Number,The method contains a magic number: 2,183
+imp,com.tagtraum.perf.gcviewer.imp,AbstractDataReaderSun,parsePause,Magic Number,The method contains a magic number: 1000,213
+imp,com.tagtraum.perf.gcviewer.imp,AbstractDataReaderSun,parseTypeString,Complex Conditional,The conditional expression c == '(' || isInParantesis || c == ')' is complex.,255
+imp,com.tagtraum.perf.gcviewer.imp,AbstractDataReaderSun,parseTypeString,Complex Conditional,The conditional expression c == ':' || c == '[' || c == ']' || c == '`' || Character.isDigit(c) is complex.,255
+imp,com.tagtraum.perf.gcviewer.imp,AbstractDataReaderSun,parseTypeString,Complex Conditional,The conditional expression c == '[' || c == ']' || Character.isDigit(c) is complex.,255
+imp,com.tagtraum.perf.gcviewer.imp,AbstractDataReaderSun,parseTypeString,Complex Method,Cyclomatic complexity of the method is 12,255
+imp,com.tagtraum.perf.gcviewer.imp,AbstractDataReaderSun,parseTypeString,Magic Number,The method contains a magic number: 20,255
+imp,com.tagtraum.perf.gcviewer.imp,AbstractDataReaderSun,parseTypeString,Magic Number,The method contains a magic number: 3,255
+imp,com.tagtraum.perf.gcviewer.imp,AbstractDataReaderSun,parseGcId,Complex Method,Cyclomatic complexity of the method is 8,304
+imp,com.tagtraum.perf.gcviewer.imp,AbstractDataReaderSun,getTimestamp,Magic Number,The method contains a magic number: 1000,411
+imp,com.tagtraum.perf.gcviewer.imp,AbstractDataReaderSun,parseDatestamp,Long Statement,The length of the statement "zonedDateTime=ZonedDateTime.parse(line.substring(pos.getIndex()`pos.getIndex() + LENGTH_OF_DATESTAMP - 1)`DateHelper.DATE_TIME_FORMATTER);" is 138.,477
+imp,com.tagtraum.perf.gcviewer.imp,AbstractDataReaderSun,nextIsDatestamp,Long Statement,The length of the statement "return line.indexOf("-"`pos.getIndex()) == pos.getIndex() + 4 && line.indexOf("-"`pos.getIndex() + 5) == pos.getIndex() + 7;" is 124.,503
+imp,com.tagtraum.perf.gcviewer.imp,AbstractDataReaderSun,nextIsDatestamp,Magic Number,The method contains a magic number: 10,503
+imp,com.tagtraum.perf.gcviewer.imp,AbstractDataReaderSun,nextIsDatestamp,Magic Number,The method contains a magic number: 4,503
+imp,com.tagtraum.perf.gcviewer.imp,AbstractDataReaderSun,nextIsDatestamp,Magic Number,The method contains a magic number: 5,503
+imp,com.tagtraum.perf.gcviewer.imp,AbstractDataReaderSun,nextIsDatestamp,Magic Number,The method contains a magic number: 7,503
+imp,com.tagtraum.perf.gcviewer.imp,AbstractDataReaderSun,parseDetailEventsIfExist,Complex Method,Cyclomatic complexity of the method is 8,518
+imp,com.tagtraum.perf.gcviewer.imp,AbstractDataReaderSun,parseDetailEventsIfExist,Magic Number,The method contains a magic number: 2,518
+imp,com.tagtraum.perf.gcviewer.imp,AbstractDataReaderSun,nextIsPromotionFailed,Magic Number,The method contains a magic number: 3,584
+imp,com.tagtraum.perf.gcviewer.imp,AbstractDataReaderSun,skipLines,Magic Number,The method contains a magic number: 200,598
+imp,com.tagtraum.perf.gcviewer.imp,AbstractDataReaderSun,skipLines,Magic Number,The method contains a magic number: 200,598
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderFacade,loadModel,Long Statement,The length of the statement "logger.warning(LocalisationHelper.getString("fileopen_dialog_read_file_failed") + "\n" + e.toString()+ " "+ e.getLocalizedMessage());" is 133.,43
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderFacade,readModel,Magic Number,The method contains a magic number: 100L,95
+imp,com.tagtraum.perf.gcviewer.imp,IBMJ9SAXHandler,handleAFElement,Complex Method,Cyclomatic complexity of the method is 9,83
+imp,com.tagtraum.perf.gcviewer.imp,IBMJ9SAXHandler,handleAFElement,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@520ac5da,83
+imp,com.tagtraum.perf.gcviewer.imp,IBMJ9SAXHandler,handleAFStart,Magic Number,The method contains a magic number: 1000,113
+imp,com.tagtraum.perf.gcviewer.imp,IBMJ9SAXHandler,handleTimeElement,Magic Number,The method contains a magic number: 1000,128
+imp,com.tagtraum.perf.gcviewer.imp,IBMJ9SAXHandler,handleTenuredElement,Magic Number,The method contains a magic number: 3,148
+imp,com.tagtraum.perf.gcviewer.imp,IBMJ9SAXHandler,handleSOAElement,Magic Number,The method contains a magic number: 3,159
+imp,com.tagtraum.perf.gcviewer.imp,IBMJ9SAXHandler,handleLOAElement,Magic Number,The method contains a magic number: 3,169
+imp,com.tagtraum.perf.gcviewer.imp,IBMJ9SAXHandler,endElement,Complex Conditional,The conditional expression currentAF.afterSOATotalBytes != -1 && currentAF.afterSOAFreeBytes != -1 && currentAF.initialSOAFreeBytes != -1 && currentAF.initialSOATotalBytes != -1 is complex.,202
+imp,com.tagtraum.perf.gcviewer.imp,IBMJ9SAXHandler,endElement,Complex Conditional,The conditional expression currentAF.afterLOATotalBytes != -1 && currentAF.afterLOAFreeBytes != -1 && currentAF.initialLOAFreeBytes != -1 && currentAF.initialLOATotalBytes != -1 is complex.,202
+imp,com.tagtraum.perf.gcviewer.imp,IBMJ9SAXHandler,endElement,Complex Method,Cyclomatic complexity of the method is 11,202
+imp,com.tagtraum.perf.gcviewer.imp,IBMJ9SAXHandler,endElement,Long Statement,The length of the statement "if (currentAF.afterSOATotalBytes != -1 && currentAF.afterSOAFreeBytes != -1 && currentAF.initialSOAFreeBytes != -1 && currentAF.initialSOATotalBytes != -1) {" is 157.,202
+imp,com.tagtraum.perf.gcviewer.imp,IBMJ9SAXHandler,endElement,Long Statement,The length of the statement "if (currentAF.afterLOATotalBytes != -1 && currentAF.afterLOAFreeBytes != -1 && currentAF.initialLOAFreeBytes != -1 && currentAF.initialLOATotalBytes != -1) {" is 157.,202
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0,read,Complex Conditional,The conditional expression gcLogType == GcLogType.SUN1_5 && lastLineWasScavengeBeforeRemark && !lineSkippedForScavengeBeforeRemark is complex.,274
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0,read,Complex Method,Cyclomatic complexity of the method is 38,274
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0,read,Long Identifier,The length of the identifier printAdaptiveSizePolicyMatcher is 30.,274
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0,read,Long Identifier,The length of the identifier printCmsStatisticsIterationsMatcher is 35.,274
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0,read,Long Identifier,The length of the identifier printTenuringDistributionMatcher is 32.,274
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0,read,Long Identifier,The length of the identifier lastLineWasScavengeBeforeRemark is 31.,274
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0,read,Long Identifier,The length of the identifier lineSkippedForScavengeBeforeRemark is 34.,274
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0,read,Long Identifier,The length of the field printAdaptiveSizePolicyPattern is 30.,274
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0,read,Long Identifier,The length of the field printCmsStatisticsIterationsPattern is 35.,274
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0,read,Long Identifier,The length of the field printTenuringDistributionPattern is 32.,274
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0,read,Long Identifier,The length of the field SHENANDOAH_DETAILS_FINAL_MARK_SPLIT_START is 41.,274
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0,read,Long Identifier,The length of the field SHENANDOAH_INTRODUCTION_TO_GC_STATISTICS is 40.,274
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0,read,Long Identifier,The length of the field SHENANDOAH_GC_CYCLE_DETAILS_START is 33.,274
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0,read,Long Identifier,The length of the field PRINT_CMS_STATISTICS_ITERATIONS is 31.,274
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0,read,Long Identifier,The length of the field PRINT_CMS_STATISTICS_ITERATIONS_GROUP_BEFORE is 44.,274
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0,read,Long Identifier,The length of the field PRINT_CMS_STATISTICS_ITERATIONS_GROUP_AFTER is 43.,274
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0,read,Long Identifier,The length of the field PRINT_TENURING_DISTRIBUTION_PATTERN_GROUP_BEFORE is 48.,274
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0,read,Long Identifier,The length of the field PRINT_TENURING_DISTRIBUTION_PATTERN_GROUP_AFTER is 47.,274
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0,read,Long Identifier,The length of the field PRINT_ADAPTIVE_SIZE_GROUP_BEFORE is 32.,274
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0,read,Long Identifier,The length of the field PRINT_ADAPTIVE_SIZE_GROUP_AFTER is 31.,274
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0,read,Long Method,The method has 177 lines of code.,274
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0,read,Long Statement,The length of the statement "if (getLogger().isLoggable(Level.INFO)) getLogger().info("Reading Sun / Oracle 1.4.x / 1.5.x / 1.6.x / 1.7.x / 1.8.x format...");" is 129.,274
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0,read,Long Statement,The length of the statement "getLogger().severe("printCmsStatisticsIterationsMatcher did not match for line " + in.getLineNumber() + ": '"+ line+ "'");" is 122.,274
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0,read,Long Statement,The length of the statement "line=printCmsStatisticsIterationsMatcher.group(PRINT_CMS_STATISTICS_ITERATIONS_GROUP_BEFORE) + printCmsStatisticsIterationsMatcher.group(PRINT_CMS_STATISTICS_ITERATIONS_GROUP_AFTER);" is 182.,274
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0,read,Long Statement,The length of the statement "line=printTenuringDistributionMatcher.group(PRINT_TENURING_DISTRIBUTION_PATTERN_GROUP_BEFORE) + printTenuringDistributionMatcher.group(PRINT_TENURING_DISTRIBUTION_PATTERN_GROUP_AFTER);" is 184.,274
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0,read,Long Statement,The length of the statement "model.add(parseLine(printAdaptiveSizePolicyMatcher.group(PRINT_ADAPTIVE_SIZE_GROUP_BEFORE) + printAdaptiveSizePolicyMatcher.group(PRINT_ADAPTIVE_SIZE_GROUP_AFTER)`parsePosition));" is 179.,274
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0,read,Magic Number,The method contains a magic number: 2,274
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0,skipGcCycleDetails,Long Identifier,The length of the field SHENANDOAH_INTRODUCTION_TO_GC_STATISTICS is 40.,510
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0,lineHasPrintFlsStatistics,Long Statement,The length of the statement "return line.endsWith(BEFORE_GC) || line.endsWith(AFTER_GC) || line.indexOf(CMS_LARGE_BLOCK) > 0 || line.indexOf(SIZE) > 0;" is 122.,546
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0,handlePrintFlsStatistics,Complex Method,Cyclomatic complexity of the method is 9,553
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0,handlePrintFlsStatistics,Long Parameter List,The method has 5 parameters. ,553
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0,findEndOfNextEventNameBefore,Long Statement,The length of the statement "while (index >= 0 && (ch == ' ' || Character.isDigit(ch) || ch == 'T' || ch == '.' || ch == ':' || ch == '+' || ch == '-'));" is 124.,608
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0,isPrintTenuringDistribution,Long Statement,The length of the statement "return line.endsWith("[DefNew") || line.endsWith("[ParNew") || line.endsWith(" (promotion failed)")|| line.endsWith("[GC")|| (line.contains("[GC (") && (line.endsWith(") ") || line.endsWith(")")));" is 197.,631
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0,parseLine,Complex Method,Cyclomatic complexity of the method is 8,644
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderIBM_J9_R28,read,Complex Method,Cyclomatic complexity of the method is 20,55
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderIBM_J9_R28,read,Long Statement,The length of the statement "if (getLogger().isLoggable(Level.FINE)) getLogger().fine("event at " + in.getLineNumber() + " doesn't contain any information` the parser can handle");" is 151.,55
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderIBM_J9_R28,read,Long Statement,The length of the statement "if (getLogger().isLoggable(Level.FINE)) getLogger().log(Level.FINE`"line " + in.getLineNumber() + ": "+ e.getMessage()`e);" is 122.,55
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderIBM_J9_R28,read,Long Statement,The length of the statement "if (getLogger().isLoggable(Level.FINE)) getLogger().log(Level.FINE`"line " + in.getLineNumber() + ": "+ e.getMessage()`e);" is 122.,55
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderIBM_J9_R28,handleVerboseGC,Long Statement,The length of the statement "assert startElement.getName().getLocalPart().equals(VERBOSEGC) : "expected name of startElement: " + VERBOSEGC + "` but got "+ startElement.getName();" is 150.,130
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderIBM_J9_R28,handleExclusiveStart,Long Statement,The length of the statement "event.setDateStamp(ZonedDateTime.of(LocalDateTime.parse(getAttributeValue(startElement`"timestamp")`dateTimeFormatter)`ZoneId.systemDefault()));" is 144.,155
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderIBM_J9_R28,handleExclusiveStart,Long Statement,The length of the statement "if (getLogger().isLoggable(Level.FINE)) getLogger().log(Level.FINE`"line " + in.getLineNumber() + ": "+ e.getMessage()`e);" is 122.,155
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderIBM_J9_R28,handleExclusiveEnd,Magic Number,The method contains a magic number: 1000,170
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderIBM_J9_R28,handleGcStart,Complex Method,Cyclomatic complexity of the method is 9,186
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderIBM_J9_R28,handleGcEnd,Complex Method,Cyclomatic complexity of the method is 8,231
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderIBM_J9_R28,toKiloBytes,Magic Number,The method contains a magic number: 1024,281
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderHPUX1_4_1,read,Complex Method,Cyclomatic complexity of the method is 9,34
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderHPUX1_4_1,read,Long Statement,The length of the statement "getLogger().warning("Malformed line (" + in.getLineNumber() + "). Wrong number of tokens ("+ st.countTokens()+ "): "+ line);" is 124.,34
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderHPUX1_4_1,read,Long Statement,The length of the statement "if (getLogger().isLoggable(Level.WARNING)) getLogger().warning("Malformed line (" + in.getLineNumber() + "). Expected \"<GC:\" in "+ line);" is 139.,34
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderHPUX1_4_1,read,Magic Number,The method contains a magic number: 22,34
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderHPUX1_4_1,read,Magic Number,The method contains a magic number: 1024,34
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderHPUX1_4_1,read,Magic Number,The method contains a magic number: 1024,34
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderHPUX1_4_1,read,Magic Number,The method contains a magic number: 1024,34
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderHPUX1_4_1,read,Magic Number,The method contains a magic number: 1024,34
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderHPUX1_4_1,read,Magic Number,The method contains a magic number: 1024,34
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderHPUX1_4_1,read,Magic Number,The method contains a magic number: 1024,34
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderHPUX1_4_1,read,Magic Number,The method contains a magic number: 1024,34
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderHPUX1_4_1,read,Magic Number,The method contains a magic number: 1024,34
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderHPUX1_4_1,read,Magic Number,The method contains a magic number: 1024,34
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderHPUX1_4_1,findType,Magic Number,The method contains a magic number: 2,211
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderHPUX1_4_1,findType,Magic Number,The method contains a magic number: 3,211
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderHPUX1_4_1,findType,Magic Number,The method contains a magic number: 4,211
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderHPUX1_4_1,findType,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@3baca7fb,211
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderJRockit1_6_0,read,Complex Method,Cyclomatic complexity of the method is 33,29
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderJRockit1_6_0,read,Long Method,The method has 119 lines of code.,29
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderJRockit1_6_0,read,Long Statement,The length of the statement "if (getLogger().isLoggable(Level.FINE)) getLogger().fine("Ignoring line " + in.getLineNumber() + ". Missing \"[memory ]\" marker: "+ line);" is 139.,29
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderJRockit1_6_0,read,Long Statement,The length of the statement "if (getLogger().isLoggable(Level.INFO)) getLogger().warning("GC log contains OutOfMemory error: " + line.substring(startLog));" is 126.,29
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderJRockit1_6_0,read,Long Statement,The length of the statement "if (getLogger().isLoggable(Level.WARNING)) getLogger().warning("Malformed line (" + in.getLineNumber() + "). Missing colon after start time: "+ line);" is 150.,29
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderJRockit1_6_0,read,Magic Number,The method contains a magic number: 4,29
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderJRockit1_6_0,read,Magic Number,The method contains a magic number: 1000.0d,29
+imp,com.tagtraum.perf.gcviewer.imp,ParseException,getMessage,Long Statement,The length of the statement "return super.getMessage() + (parsePosition != null ? (" Line " + parsePosition.getLineNumber() + ": "+ line) : (" Line: " + line));" is 131.,33
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_3_1,read,Complex Conditional,The conditional expression !"".equals(trimmedLine) && !trimmedLine.startsWith("<GC: ") && !trimmedLine.startsWith("<") is complex.,33
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_3_1,read,Complex Method,Cyclomatic complexity of the method is 16,33
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_3_1,read,Magic Number,The method contains a magic number: 1000.0d,33
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_3_1,read,Magic Number,The method contains a magic number: 2,33
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_3_1,read,Magic Number,The method contains a magic number: 2,33
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_3_1,read,Magic Number,The method contains a magic number: 3,33
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_3_1,read,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@4c60d61,33
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_3_1,parseTimeSinceLastAF,Magic Number,The method contains a magic number: 2,129
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_3_1,parseTimeSinceLastAF,Magic Number,The method contains a magic number: 1000.0d,129
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_3_1,parsePreUsed,Magic Number,The method contains a magic number: 1024L,135
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_3_1,parsePreUsedAFAction3,Magic Number,The method contains a magic number: 1024L,149
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_3_1,parsePostUsed,Magic Number,The method contains a magic number: 1024L,157
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_3_1,parseTotalAfterGC,Magic Number,The method contains a magic number: 1024L,165
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_3_1,parseTotalAfterHeapExpansion,Magic Number,The method contains a magic number: 3,171
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_3_1,parseTotalAfterHeapExpansion,Magic Number,The method contains a magic number: 1024L,171
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_3_1,parsePause,Magic Number,The method contains a magic number: 3,177
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_3_1,parsePause,Magic Number,The method contains a magic number: 1000.0d,177
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,read,Long Statement,The length of the statement "lines.map(line -> new ParseContext(line`partialEventsMap`infoMap)).filter(this::lineContainsParseableEvent).map(this::parseEvent).filter(context -> context.getCurrentEvent() != null).forEach(context -> model.add(context.getCurrentEvent()));" is 240.,212
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,parseEvent,Long Statement,The length of the statement "getLogger().warning(String.format("Failed to parse gc event (%s) on line number %d (line=\"%s\")"`e.toString()`in.getLineNumber()`context.getLine()));" is 150.,237
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,handleTail,Complex Method,Cyclomatic complexity of the method is 8,257
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,handleTail,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@557de967,257
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,updateEventDetails,Long Statement,The length of the statement "getLogger().warning(String.format("Didn't find parent event for partial event %s (line number %d` line=\"%s\""`event.toString()`in.getLineNumber()`context.getLine()));" is 167.,385
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,updateEventDetails,Long Statement,The length of the statement "getLogger().warning(String.format("Parent (%s) event for %s should be GCEvent (line number %d` line=\"%s\""`parentEvent.toString()`event.toString()`in.getLineNumber()`context.getLine()));" is 187.,385
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,parseTail,Complex Method,Cyclomatic complexity of the method is 8,398
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,parseTail,Long Statement,The length of the statement "else if (event.getExtendedType().getPattern().equals(GcPattern.GC) || event.getExtendedType().getPattern().equals(GcPattern.GC_PAUSE_DURATION)) {" is 145.,398
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,parseGcTail,Long Statement,The length of the statement "getLogger().warning(String.format("Unexpected tail present in the end of line number %d (expected nothing to be present` tail=\"%s\"; line=\"%s\")"`in.getLineNumber()`tail`context.getLine()));" is 192.,418
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,parseGcMemoryTail,Long Statement,The length of the statement "getLogger().warning(String.format("Expected only memory in the end of line number %d (line=\"%s\")"`in.getLineNumber()`context.getLine()));" is 139.,424
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,parseGcMemoryPauseTail,Long Statement,The length of the statement "getLogger().warning(String.format("Expected memory and pause in the end of line number %d (line=\"%s\")"`in.getLineNumber()`context.getLine()));" is 144.,433
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,parseGcPauseTail,Long Statement,The length of the statement "getLogger().warning(String.format("Expected only pause in the end of line number %d (line=\"%s\")"`in.getLineNumber()`context.getLine()));" is 138.,446
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,parseGcRegionTail,Long Statement,The length of the statement "getLogger().warning(String.format("Expected region information in the end of line number %d (line=\"%s\")"`in.getLineNumber()`context.getLine()));" is 146.,463
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,parseGcRegionTail,Magic Number,The method contains a magic number: 1024,463
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,parseGcRegionTail,Magic Number,The method contains a magic number: 1024,463
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,parseGcRegionTail,Magic Number,The method contains a magic number: 1024,463
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,parseGcMemoryPercentageTail,Long Statement,The length of the statement "getLogger().warning(String.format("Expected memory percentage in the end of line number %d (line=\"%s\")"`in.getLineNumber()`context.getLine()));" is 145.,482
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,parseGcHeapMemoryPercentageTail,Long Identifier,The length of the field PATTERN_HEAP_MEMORY_PERCENTAGE is 30.,494
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,parseGcHeapMemoryPercentageTail,Long Statement,The length of the statement "getLogger().warning(String.format("Expected heap memory percentage in the end of line number %d (line=\"%s\")"`in.getLineNumber()`context.getLine()));" is 150.,494
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,createGcEventWithStandardDecorators,Long Statement,The length of the statement "setTimeStampIfPresent(event`decoratorsMatcher.group(GROUP_DECORATORS_UPTIME)`decoratorsMatcher.group(GROUP_DECORATORS_UPTIME_UNIT));" is 132.,505
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,setPause,Magic Number,The method contains a magic number: 1000,542
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,setMemory,Long Identifier,The length of the field GROUP_MEMORY_CURRENT_TOTAL_UNIT is 31.,553
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,setMemory,Long Statement,The length of the statement "event.setPreUsed(getDataReaderTools().getMemoryInKiloByte(Integer.parseInt(matcher.group(GROUP_MEMORY_BEFORE))`matcher.group(GROUP_MEMORY_BEFORE_UNIT).charAt(0)`matcher.group(GROUP_MEMORY)));" is 191.,553
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,setMemory,Long Statement,The length of the statement "event.setPostUsed(getDataReaderTools().getMemoryInKiloByte(Integer.parseInt(matcher.group(GROUP_MEMORY_AFTER))`matcher.group(GROUP_MEMORY_AFTER_UNIT).charAt(0)`matcher.group(GROUP_MEMORY)));" is 190.,553
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,setMemory,Long Statement,The length of the statement "event.setTotal(getDataReaderTools().getMemoryInKiloByte(Integer.parseInt(matcher.group(GROUP_MEMORY_CURRENT_TOTAL))`matcher.group(GROUP_MEMORY_CURRENT_TOTAL_UNIT).charAt(0)`matcher.group(GROUP_MEMORY)));" is 203.,553
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,setMemoryHeapWithPercentage,Long Identifier,The length of the field GROUP_HEAP_MEMORY_PERCENTAGE_VALUE is 34.,563
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,setMemoryHeapWithPercentage,Long Identifier,The length of the field GROUP_HEAP_MEMORY_PERCENTAGE_UNIT is 33.,563
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,setMemoryHeapWithPercentage,Long Statement,The length of the statement "event.setTotal(getDataReaderTools().getMemoryInKiloByte(Integer.parseInt(matcher.group(GROUP_HEAP_MEMORY_PERCENTAGE_VALUE))`matcher.group(GROUP_HEAP_MEMORY_PERCENTAGE_UNIT).charAt(0)`matcher.group(GROUP_HEAP_MEMORY_PERCENTAGE)));" is 229.,563
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,setMemoryWithPercentage,Long Identifier,The length of the field GROUP_MEMORY_PERCENTAGE_BEFORE is 30.,568
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,setMemoryWithPercentage,Long Identifier,The length of the field GROUP_MEMORY_PERCENTAGE_BEFORE_UNIT is 35.,568
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,setMemoryWithPercentage,Long Identifier,The length of the field GROUP_MEMORY_PERCENTAGE_AFTER_UNIT is 34.,568
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,setMemoryWithPercentage,Long Identifier,The length of the field GROUP_MEMORY_PERCENTAGE_BEFORE_PERCENTAGE is 41.,568
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,setMemoryWithPercentage,Long Identifier,The length of the field GROUP_MEMORY_PERCENTAGE_AFTER_PERCENTAGE is 40.,568
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,setMemoryWithPercentage,Long Statement,The length of the statement "event.setPreUsed(getDataReaderTools().getMemoryInKiloByte(Integer.parseInt(matcher.group(GROUP_MEMORY_PERCENTAGE_BEFORE))`matcher.group(GROUP_MEMORY_PERCENTAGE_BEFORE_UNIT).charAt(0)`matcher.group(GROUP_MEMORY_PERCENTAGE)));" is 224.,568
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,setMemoryWithPercentage,Long Statement,The length of the statement "event.setPostUsed(getDataReaderTools().getMemoryInKiloByte(Integer.parseInt(matcher.group(GROUP_MEMORY_PERCENTAGE_AFTER))`matcher.group(GROUP_MEMORY_PERCENTAGE_AFTER_UNIT).charAt(0)`matcher.group(GROUP_MEMORY_PERCENTAGE)));" is 223.,568
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,setMemoryWithPercentage,Magic Number,The method contains a magic number: 100,568
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,setTimeStampIfPresent,Magic Number,The method contains a magic number: 1000,586
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,enrichContext,Long Statement,The length of the statement "getLogger().warning(String.format("Failed to parse heap region size on line %d (line=%s)"`in.getLineNumber()`context.getLine()));" is 129.,622
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_2_2,read,Complex Method,Cyclomatic complexity of the method is 8,26
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_2_2,read,Long Statement,The length of the statement "int percentUsed=Integer.parseInt(line.substring(line.length() - "XX% free>".length()`line.length() - "% free>".length()));" is 122.,26
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_2_2,read,Magic Number,The method contains a magic number: 5,26
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_2_2,read,Magic Number,The method contains a magic number: 5,26
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_2_2,read,Magic Number,The method contains a magic number: 1000.0d,26
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_2_2,read,Magic Number,The method contains a magic number: 1024L,26
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_2_2,read,Magic Number,The method contains a magic number: 100l,26
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_2_2,read,Magic Number,The method contains a magic number: 1024L,26
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_2_2,read,Magic Number,The method contains a magic number: 2,26
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_2_2,read,Magic Number,The method contains a magic number: 3,26
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_2_2,read,Magic Number,The method contains a magic number: 1024,26
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_2_2,read,Magic Number,The method contains a magic number: 1024,26
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_2_2,read,Magic Number,The method contains a magic number: 1024,26
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_2_2,read,Magic Number,The method contains a magic number: 1000.0d,26
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderFactory,getDataReader,Complex Method,Cyclomatic complexity of the method is 11,29
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderFactory,getDataReader,Long Statement,The length of the statement "if (getLogger().isLoggable(Level.SEVERE)) getLogger().severe(LocalisationHelper.getString("datareaderfactory_instantiation_failed") + "\ncontent:" + "\n"+ s);" is 158.,29
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderFactory,getDataReaderBySample,Complex Conditional,The conditional expression s.contains(" (young)") || s.contains("G1Ergonomics") || s.contains(" (mixed)")|| s.contains("-XX:+UseG1GC") is complex.,109
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderFactory,getDataReaderBySample,Complex Conditional,The conditional expression s.contains("[GC") || s.contains("[Full GC") || s.contains("[Inc GC") is complex.,109
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderFactory,getDataReaderBySample,Complex Conditional,The conditional expression s.indexOf("<GC: ") == 0 && s.contains(">") && new StringTokenizer(s.substring(0`s.indexOf(">") + 1)`" ").countTokens() == 20 is complex.,109
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderFactory,getDataReaderBySample,Complex Conditional,The conditional expression s.startsWith("<GC: ") && s.contains(">") && new StringTokenizer(s.substring(0`s.indexOf(">") + 1)`" ").countTokens() == 22 is complex.,109
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderFactory,getDataReaderBySample,Complex Conditional,The conditional expression s.contains("<verbosegc") && (s.contains("version=\"R26_Java6") || s.contains("version=\"R27_Java7") || s.contains("version=\"R28_Java8")) is complex.,109
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderFactory,getDataReaderBySample,Complex Method,Cyclomatic complexity of the method is 43,109
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderFactory,getDataReaderBySample,Long Statement,The length of the statement "if (getLogger().isLoggable(Level.INFO)) getLogger().info("File format: Sun / Oracle / OpenJdk 1.6.x .. 1.8.x G1 collector");" is 124.,109
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderFactory,getDataReaderBySample,Long Statement,The length of the statement "else if (s.indexOf("<GC: ") == 0 && s.contains(">") && new StringTokenizer(s.substring(0`s.indexOf(">") + 1)`" ").countTokens() == 20) {" is 136.,109
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderFactory,getDataReaderBySample,Long Statement,The length of the statement "else if (s.startsWith("<GC: ") && s.contains(">") && new StringTokenizer(s.substring(0`s.indexOf(">") + 1)`" ").countTokens() == 22) {" is 134.,109
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderFactory,getDataReaderBySample,Long Statement,The length of the statement "else if (s.contains("<verbosegc") && (s.contains("version=\"R26_Java6") || s.contains("version=\"R27_Java7") || s.contains("version=\"R28_Java8"))) {" is 149.,109
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderFactory,getDataReaderBySample,Magic Number,The method contains a magic number: 20,109
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderFactory,getDataReaderBySample,Magic Number,The method contains a magic number: 22,109
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderFactory,isGZipped,Magic Number,The method contains a magic number: 2,227
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderFactory,isGZipped,Magic Number,The method contains a magic number: 8,227
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderJRockit1_4_2,read,Complex Method,Cyclomatic complexity of the method is 27,28
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderJRockit1_4_2,read,Long Method,The method has 105 lines of code.,28
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderJRockit1_4_2,read,Long Statement,The length of the statement "if (getLogger().isLoggable(Level.FINE)) getLogger().fine("Ignoring line " + in.getLineNumber() + ". Missing \"[memory ]\" marker: "+ line);" is 139.,28
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderJRockit1_4_2,read,Long Statement,The length of the statement "if (getLogger().isLoggable(Level.WARNING)) getLogger().warning("Malformed line (" + in.getLineNumber() + "). Missing colon after start time: "+ line);" is 150.,28
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderJRockit1_4_2,read,Magic Number,The method contains a magic number: 3,28
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderJRockit1_4_2,read,Magic Number,The method contains a magic number: 2,28
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderJRockit1_4_2,read,Magic Number,The method contains a magic number: 1000.0d,28
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_4_2,read,Complex Conditional,The conditional expression !"".equals(trimmedLine) && !trimmedLine.startsWith("<GC: ") && !trimmedLine.startsWith("<") is complex.,39
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_4_2,read,Complex Method,Cyclomatic complexity of the method is 18,39
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_4_2,read,Magic Number,The method contains a magic number: 1000.0d,39
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_4_2,read,Magic Number,The method contains a magic number: 2,39
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_4_2,read,Magic Number,The method contains a magic number: 2,39
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_4_2,read,Magic Number,The method contains a magic number: 3,39
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_4_2,read,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@e2448b4,39
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_4_2,parseTimeSinceLastAF,Magic Number,The method contains a magic number: 2,137
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_4_2,parseTimeSinceLastAF,Magic Number,The method contains a magic number: 1000.0d,137
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_4_2,parsePreUsed,Magic Number,The method contains a magic number: 1024L,143
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_4_2,parsePreUsedAFAction3,Magic Number,The method contains a magic number: 1024L,157
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_4_2,parsePostUsed,Magic Number,The method contains a magic number: 1024L,165
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_4_2,parseTotalAfterGC,Magic Number,The method contains a magic number: 1024L,173
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_4_2,parseTotalAfterHeapExpansion,Magic Number,The method contains a magic number: 3,179
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_4_2,parseTotalAfterHeapExpansion,Magic Number,The method contains a magic number: 1024L,179
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_4_2,parsePause,Magic Number,The method contains a magic number: 3,185
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_4_2,parsePause,Magic Number,The method contains a magic number: 1000.0d,185
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_3_0,read,Complex Conditional,The conditional expression (!trimmedLine.equals("")) && (!trimmedLine.startsWith("<GC: ")) && (!(trimmedLine.startsWith("<") && trimmedLine.endsWith(">"))) is complex.,27
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_3_0,read,Complex Method,Cyclomatic complexity of the method is 16,27
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_3_0,read,Magic Number,The method contains a magic number: 2,27
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_3_0,read,Magic Number,The method contains a magic number: 3,27
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_3_0,read,Magic Number,The method contains a magic number: 4,27
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_3_0,read,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@50e9b5f4,27
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_3_0,parseTimeSinceLastAF,Magic Number,The method contains a magic number: 2,88
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_3_0,parseTimeSinceLastAF,Magic Number,The method contains a magic number: 1000.0d,88
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_3_0,parsePreUsed,Magic Number,The method contains a magic number: 1024l,94
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_3_0,parsePostUsed,Magic Number,The method contains a magic number: 1024L,106
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_3_0,parseTotalAfterGC,Magic Number,The method contains a magic number: 1024L,113
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_3_0,parseTotalAfterHeapExpansion,Magic Number,The method contains a magic number: 3,119
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_3_0,parseTotalAfterHeapExpansion,Magic Number,The method contains a magic number: 1024L,119
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_3_0,parsePause,Magic Number,The method contains a magic number: 3,125
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_3_0,parsePause,Magic Number,The method contains a magic number: 1000.0d,125
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderGo,parseMatch,Magic Number,The method contains a magic number: 2,78
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderGo,parseMatch,Magic Number,The method contains a magic number: 4,78
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderGo,parseMatch,Magic Number,The method contains a magic number: 1000.0,78
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderGo,parseMatch,Magic Number,The method contains a magic number: 6,78
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderGo,parseMatch,Magic Number,The method contains a magic number: 1000.0,78
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderGo,parseMatch,Magic Number,The method contains a magic number: 12,78
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderGo,parseMatch,Magic Number,The method contains a magic number: 1024,78
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderGo,parseMatch,Magic Number,The method contains a magic number: 13,78
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderGo,parseMatch,Magic Number,The method contains a magic number: 1024,78
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderGo,parseMatch,Magic Number,The method contains a magic number: 14,78
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderGo,parseMatch,Magic Number,The method contains a magic number: 1024,78
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderHPUX1_2,read,Complex Method,Cyclomatic complexity of the method is 9,28
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderHPUX1_2,read,Long Statement,The length of the statement "if (getLogger().isLoggable(Level.WARNING)) getLogger().warning("Malformed line (" + in.getLineNumber() + "). Wrong number of tokens ("+ st.countTokens()+ "): "+ line);" is 167.,28
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderHPUX1_2,read,Long Statement,The length of the statement "if (getLogger().isLoggable(Level.WARNING)) getLogger().warning("Malformed line (" + in.getLineNumber() + "). Expected \"<GC:\" in "+ line);" is 139.,28
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderHPUX1_2,read,Magic Number,The method contains a magic number: 20,28
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderHPUX1_2,read,Magic Number,The method contains a magic number: 1024,28
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderHPUX1_2,read,Magic Number,The method contains a magic number: 1024,28
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderHPUX1_2,read,Magic Number,The method contains a magic number: 1024,28
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderHPUX1_2,read,Magic Number,The method contains a magic number: 1024,28
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderHPUX1_2,read,Magic Number,The method contains a magic number: 1024,28
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderHPUX1_2,read,Magic Number,The method contains a magic number: 1024,28
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderHPUX1_2,read,Magic Number,The method contains a magic number: 1024,28
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderHPUX1_2,read,Magic Number,The method contains a magic number: 1024,28
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderHPUX1_2,read,Magic Number,The method contains a magic number: 1024,28
+imp,com.tagtraum.perf.gcviewer.imp,MonitoredBufferedInputStream,MonitoredBufferedInputStream,Magic Number,The method contains a magic number: 8192,30
+imp,com.tagtraum.perf.gcviewer.imp,MonitoredBufferedInputStream,MonitoredBufferedInputStream,Magic Number,The method contains a magic number: 100L,34
+imp,com.tagtraum.perf.gcviewer.imp,MonitoredBufferedInputStream,updateCounters,Magic Number,The method contains a magic number: 100,46
+imp,com.tagtraum.perf.gcviewer.imp,MonitoredBufferedInputStream,updateCounters,Magic Number,The method contains a magic number: 100,46
+imp,com.tagtraum.perf.gcviewer.imp,MonitoredBufferedInputStream,updateCounters,Magic Number,The method contains a magic number: 100,46
+imp,com.tagtraum.perf.gcviewer.imp,MonitoredBufferedInputStream,getPercentageRead,Magic Number,The method contains a magic number: 100,104
+imp,com.tagtraum.perf.gcviewer.imp,MonitoredBufferedInputStream,getPercentageRead,Magic Number,The method contains a magic number: 100L,104
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderTools,getMemoryInKiloByte,Magic Number,The method contains a magic number: 1024,24
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderTools,getMemoryInKiloByte,Magic Number,The method contains a magic number: 1024,24
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderTools,getMemoryInKiloByte,Magic Number,The method contains a magic number: 1024,24
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderTools,getMemoryInKiloByte,Magic Number,The method contains a magic number: 1024,24
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderTools,getLookupTypeName,Magic Number,The method contains a magic number: 2,104
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0G1,read,Complex Method,Cyclomatic complexity of the method is 33,179
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0G1,read,Long Identifier,The length of the field GC_CONCURRENT_STRING_DEDUPLICATION is 34.,179
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0G1,read,Long Method,The method has 160 lines of code.,179
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0G1,read,Magic Number,The method contains a magic number: 2,179
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0G1,read,Magic Number,The method contains a magic number: 200,179
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0G1,hasIncompleteConcurrentEvent,Long Statement,The length of the statement "return !nextIsTimestamp(line`parsePosition) && !nextIsDatestamp(line`parsePosition) && line.contains("incomplete_concurrent_event");" is 132.,375
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0G1,isPrintTenuringDistribution,Long Statement,The length of the statement "return (line.indexOf("GC pause") >= 0 && line.endsWith(")")) || (line.indexOf(Type.FULL_GC.getName()) >= 0 && line.endsWith(")"));" is 130.,382
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0G1,parseDetails,Complex Conditional,The conditional expression line.charAt(0) != ' ' && !hasTimes && (nextIsDatestamp(line`pos) || nextIsTimestamp(line`pos)) is complex.,394
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0G1,parseDetails,Complex Method,Cyclomatic complexity of the method is 11,394
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0G1,parseDetails,Long Identifier,The length of the field INCOMPLETE_CONCURRENT_EVENT_INDICATOR is 37.,394
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0G1,parseDetails,Long Parameter List,The method has 5 parameters. ,394
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0G1,parseIncompleteConcurrentEvent,Long Statement,The length of the statement "model.add(parseConcurrentEvent(line`pos`previousEvent != null ? previousEvent.getDatestamp() : null`previousEvent != null ? previousEvent.getTimestamp() : 0`type));" is 164.,526
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0G1,parseConcurrentEvent,Long Parameter List,The method has 5 parameters. ,596
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0G1,skipLinesRespectingConcurrentEvents,Long Identifier,The length of the field INCOMPLETE_CONCURRENT_EVENT_INDICATOR is 37.,625
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0G1,skipLinesRespectingConcurrentEvents,Magic Number,The method contains a magic number: 200,625
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0G1,skipLinesRespectingConcurrentEvents,Magic Number,The method contains a magic number: 200,625
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderIBMi5OS1_4_2,read,Complex Method,Cyclomatic complexity of the method is 16,38
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderIBMi5OS1_4_2,read,Magic Number,The method contains a magic number: 1000.0d,38
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderIBMi5OS1_4_2,read,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@6470078d,38
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderIBMi5OS1_4_2,parseInitialHeap,Magic Number,The method contains a magic number: 17,157
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderIBMi5OS1_4_2,parseTotalAfterGC,Magic Number,The method contains a magic number: 17,170
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderIBMi5OS1_4_2,parseFreed,Magic Number,The method contains a magic number: 14,183
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderIBMi5OS1_4_2,parseCurrentCycle,Magic Number,The method contains a magic number: 29,195
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderIBMi5OS1_4_2,parsePreviousCycle,Magic Number,The method contains a magic number: 30,207
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderIBMi5OS1_4_2,parsePause,Magic Number,The method contains a magic number: 23,219
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderIBMi5OS1_4_2,parsePause,Magic Number,The method contains a magic number: 1000.0d,219
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderJRockit1_5_0,read,Complex Method,Cyclomatic complexity of the method is 39,29
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderJRockit1_5_0,read,Long Method,The method has 131 lines of code.,29
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderJRockit1_5_0,read,Long Statement,The length of the statement "if (getLogger().isLoggable(Level.FINE)) getLogger().fine("Ignoring line " + in.getLineNumber() + ". Missing \"[memory ]\" marker: "+ line);" is 139.,29
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderJRockit1_5_0,read,Long Statement,The length of the statement "if (getLogger().isLoggable(Level.WARNING)) getLogger().warning("GC log contains OutOfMemory error: " + line.substring(startTimeIndex));" is 135.,29
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderJRockit1_5_0,read,Long Statement,The length of the statement "if (getLogger().isLoggable(Level.WARNING)) getLogger().warning("Malformed line (" + in.getLineNumber() + "). Missing colon after start time: "+ line);" is 150.,29
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderJRockit1_5_0,read,Magic Number,The method contains a magic number: 2,29
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderJRockit1_5_0,read,Magic Number,The method contains a magic number: 3,29
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderJRockit1_5_0,read,Magic Number,The method contains a magic number: 1000.0d,29
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_3_1,read,Complex Method,Cyclomatic complexity of the method is 11,32
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_3_1,read,Empty catch clause,The method has an empty catch block.,32
+imp,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_3_1,read,Magic Number,The method contains a magic number: 64,32
+imp,com.tagtraum.perf.gcviewer.imp,AbstractDataReader,AbstractDataReader,Magic Number,The method contains a magic number: 64,28
+imp,com.tagtraum.perf.gcviewer.imp,AbstractDataReader,AbstractDataReader,Magic Number,The method contains a magic number: 1024,28

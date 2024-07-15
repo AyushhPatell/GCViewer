@@ -372,11 +372,12 @@ public class DataReaderSun1_6_0G1 extends AbstractDataReaderSun {
         }
     }
 
-    private boolean hasIncompleteConcurrentEvent(String line, ParseInformation paresPosition) {
-        return !nextIsTimestamp(line, paresPosition)
-                && !nextIsDatestamp(line, paresPosition)
-                && line.indexOf(INCOMPLETE_CONCURRENT_EVENT_INDICATOR) >= 0;
+    private boolean hasIncompleteConcurrentEvent(String line, ParseInformation parsePosition) {
+        return !nextIsTimestamp(line, parsePosition)
+                && !nextIsDatestamp(line, parsePosition)
+                && line.contains("incomplete_concurrent_event");
     }
+
 
     /**
      * Returns true, if <code>line</code> ends with one of the detailed event types.

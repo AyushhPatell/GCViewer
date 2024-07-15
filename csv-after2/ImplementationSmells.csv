@@ -1,0 +1,766 @@
+Project Name,Package Name,Type Name,Method Name,Implementation Smell,Cause of the Smell,Method start line no
+gcviewer,com.tagtraum.perf.gcviewer.imp,AbstractDataReaderSun,setMemoryExtended,Long Statement,The length of the statement "event.setPreUsed(getMemoryInKiloByte(NumberParser.parseDouble(line`currentPos`endOfNextNumber - currentPos - 1)`line.charAt(endOfNextNumber - 1)`line));" is 152.,107
+gcviewer,com.tagtraum.perf.gcviewer.imp,AbstractDataReaderSun,setMemoryExtended,Long Statement,The length of the statement "event.setPostUsed(getMemoryInKiloByte(NumberParser.parseDouble(line`currentPos`endOfNextNumber - currentPos - 1)`line.charAt(endOfNextNumber - 1)`line));" is 153.,107
+gcviewer,com.tagtraum.perf.gcviewer.imp,AbstractDataReaderSun,setMemoryExtended,Long Statement,The length of the statement "event.setTotal(getMemoryInKiloByte(NumberParser.parseDouble(line`currentPos`endOfNextNumber - currentPos - 1)`line.charAt(endOfNextNumber - 1)`line));" is 150.,107
+gcviewer,com.tagtraum.perf.gcviewer.imp,AbstractDataReaderSun,setMemoryExtended,Magic Number,The method contains a magic number: 2,107
+gcviewer,com.tagtraum.perf.gcviewer.imp,AbstractDataReaderSun,setMemoryExtended,Magic Number,The method contains a magic number: 10,107
+gcviewer,com.tagtraum.perf.gcviewer.imp,AbstractDataReaderSun,setMemory,Magic Number,The method contains a magic number: 2,183
+gcviewer,com.tagtraum.perf.gcviewer.imp,AbstractDataReaderSun,setMemory,Magic Number,The method contains a magic number: 2,183
+gcviewer,com.tagtraum.perf.gcviewer.imp,AbstractDataReaderSun,setMemory,Magic Number,The method contains a magic number: 3,183
+gcviewer,com.tagtraum.perf.gcviewer.imp,AbstractDataReaderSun,setMemory,Magic Number,The method contains a magic number: 2,183
+gcviewer,com.tagtraum.perf.gcviewer.imp,AbstractDataReaderSun,setMemory,Magic Number,The method contains a magic number: 2,183
+gcviewer,com.tagtraum.perf.gcviewer.imp,AbstractDataReaderSun,parsePause,Magic Number,The method contains a magic number: 1000,213
+gcviewer,com.tagtraum.perf.gcviewer.imp,AbstractDataReaderSun,parseTypeString,Complex Conditional,The conditional expression c == '(' || isInParantesis || c == ')' is complex.,255
+gcviewer,com.tagtraum.perf.gcviewer.imp,AbstractDataReaderSun,parseTypeString,Complex Conditional,The conditional expression c == ':' || c == '[' || c == ']' || c == '`' || Character.isDigit(c) is complex.,255
+gcviewer,com.tagtraum.perf.gcviewer.imp,AbstractDataReaderSun,parseTypeString,Complex Conditional,The conditional expression c == '[' || c == ']' || Character.isDigit(c) is complex.,255
+gcviewer,com.tagtraum.perf.gcviewer.imp,AbstractDataReaderSun,parseTypeString,Complex Method,Cyclomatic complexity of the method is 12,255
+gcviewer,com.tagtraum.perf.gcviewer.imp,AbstractDataReaderSun,parseTypeString,Magic Number,The method contains a magic number: 20,255
+gcviewer,com.tagtraum.perf.gcviewer.imp,AbstractDataReaderSun,parseTypeString,Magic Number,The method contains a magic number: 3,255
+gcviewer,com.tagtraum.perf.gcviewer.imp,AbstractDataReaderSun,parseGcId,Complex Method,Cyclomatic complexity of the method is 8,304
+gcviewer,com.tagtraum.perf.gcviewer.imp,AbstractDataReaderSun,getTimestamp,Magic Number,The method contains a magic number: 1000,411
+gcviewer,com.tagtraum.perf.gcviewer.imp,AbstractDataReaderSun,parseDatestamp,Long Statement,The length of the statement "zonedDateTime=ZonedDateTime.parse(line.substring(pos.getIndex()`pos.getIndex() + LENGTH_OF_DATESTAMP - 1)`DateHelper.DATE_TIME_FORMATTER);" is 138.,477
+gcviewer,com.tagtraum.perf.gcviewer.imp,AbstractDataReaderSun,nextIsDatestamp,Long Statement,The length of the statement "return line.indexOf("-"`pos.getIndex()) == pos.getIndex() + 4 && line.indexOf("-"`pos.getIndex() + 5) == pos.getIndex() + 7;" is 124.,503
+gcviewer,com.tagtraum.perf.gcviewer.imp,AbstractDataReaderSun,nextIsDatestamp,Magic Number,The method contains a magic number: 10,503
+gcviewer,com.tagtraum.perf.gcviewer.imp,AbstractDataReaderSun,nextIsDatestamp,Magic Number,The method contains a magic number: 4,503
+gcviewer,com.tagtraum.perf.gcviewer.imp,AbstractDataReaderSun,nextIsDatestamp,Magic Number,The method contains a magic number: 5,503
+gcviewer,com.tagtraum.perf.gcviewer.imp,AbstractDataReaderSun,nextIsDatestamp,Magic Number,The method contains a magic number: 7,503
+gcviewer,com.tagtraum.perf.gcviewer.imp,AbstractDataReaderSun,parseDetailEventsIfExist,Complex Method,Cyclomatic complexity of the method is 8,518
+gcviewer,com.tagtraum.perf.gcviewer.imp,AbstractDataReaderSun,parseDetailEventsIfExist,Magic Number,The method contains a magic number: 2,518
+gcviewer,com.tagtraum.perf.gcviewer.imp,AbstractDataReaderSun,nextIsPromotionFailed,Magic Number,The method contains a magic number: 3,584
+gcviewer,com.tagtraum.perf.gcviewer.imp,AbstractDataReaderSun,skipLines,Magic Number,The method contains a magic number: 200,598
+gcviewer,com.tagtraum.perf.gcviewer.imp,AbstractDataReaderSun,skipLines,Magic Number,The method contains a magic number: 200,598
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderFacade,loadModel,Long Statement,The length of the statement "logger.warning(LocalisationHelper.getString("fileopen_dialog_read_file_failed") + "\n" + e.toString()+ " "+ e.getLocalizedMessage());" is 133.,43
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderFacade,readModel,Magic Number,The method contains a magic number: 100L,95
+gcviewer,com.tagtraum.perf.gcviewer.imp,IBMJ9SAXHandler,handleAFElement,Complex Method,Cyclomatic complexity of the method is 9,83
+gcviewer,com.tagtraum.perf.gcviewer.imp,IBMJ9SAXHandler,handleAFElement,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@6a22e625,83
+gcviewer,com.tagtraum.perf.gcviewer.imp,IBMJ9SAXHandler,handleAFStart,Magic Number,The method contains a magic number: 1000,113
+gcviewer,com.tagtraum.perf.gcviewer.imp,IBMJ9SAXHandler,handleTimeElement,Magic Number,The method contains a magic number: 1000,128
+gcviewer,com.tagtraum.perf.gcviewer.imp,IBMJ9SAXHandler,handleTenuredElement,Magic Number,The method contains a magic number: 3,148
+gcviewer,com.tagtraum.perf.gcviewer.imp,IBMJ9SAXHandler,handleSOAElement,Magic Number,The method contains a magic number: 3,159
+gcviewer,com.tagtraum.perf.gcviewer.imp,IBMJ9SAXHandler,handleLOAElement,Magic Number,The method contains a magic number: 3,169
+gcviewer,com.tagtraum.perf.gcviewer.imp,IBMJ9SAXHandler,endElement,Complex Conditional,The conditional expression currentAF.afterSOATotalBytes != -1 && currentAF.afterSOAFreeBytes != -1 && currentAF.initialSOAFreeBytes != -1 && currentAF.initialSOATotalBytes != -1 is complex.,202
+gcviewer,com.tagtraum.perf.gcviewer.imp,IBMJ9SAXHandler,endElement,Complex Conditional,The conditional expression currentAF.afterLOATotalBytes != -1 && currentAF.afterLOAFreeBytes != -1 && currentAF.initialLOAFreeBytes != -1 && currentAF.initialLOATotalBytes != -1 is complex.,202
+gcviewer,com.tagtraum.perf.gcviewer.imp,IBMJ9SAXHandler,endElement,Complex Method,Cyclomatic complexity of the method is 11,202
+gcviewer,com.tagtraum.perf.gcviewer.imp,IBMJ9SAXHandler,endElement,Long Statement,The length of the statement "if (currentAF.afterSOATotalBytes != -1 && currentAF.afterSOAFreeBytes != -1 && currentAF.initialSOAFreeBytes != -1 && currentAF.initialSOATotalBytes != -1) {" is 157.,202
+gcviewer,com.tagtraum.perf.gcviewer.imp,IBMJ9SAXHandler,endElement,Long Statement,The length of the statement "if (currentAF.afterLOATotalBytes != -1 && currentAF.afterLOAFreeBytes != -1 && currentAF.initialLOAFreeBytes != -1 && currentAF.initialLOATotalBytes != -1) {" is 157.,202
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0,read,Complex Conditional,The conditional expression gcLogType == GcLogType.SUN1_5 && lastLineWasScavengeBeforeRemark && !lineSkippedForScavengeBeforeRemark is complex.,274
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0,read,Complex Method,Cyclomatic complexity of the method is 38,274
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0,read,Long Identifier,The length of the identifier printAdaptiveSizePolicyMatcher is 30.,274
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0,read,Long Identifier,The length of the identifier printCmsStatisticsIterationsMatcher is 35.,274
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0,read,Long Identifier,The length of the identifier printTenuringDistributionMatcher is 32.,274
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0,read,Long Identifier,The length of the identifier lastLineWasScavengeBeforeRemark is 31.,274
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0,read,Long Identifier,The length of the identifier lineSkippedForScavengeBeforeRemark is 34.,274
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0,read,Long Identifier,The length of the field printAdaptiveSizePolicyPattern is 30.,274
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0,read,Long Identifier,The length of the field printCmsStatisticsIterationsPattern is 35.,274
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0,read,Long Identifier,The length of the field printTenuringDistributionPattern is 32.,274
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0,read,Long Identifier,The length of the field SHENANDOAH_DETAILS_FINAL_MARK_SPLIT_START is 41.,274
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0,read,Long Identifier,The length of the field SHENANDOAH_INTRODUCTION_TO_GC_STATISTICS is 40.,274
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0,read,Long Identifier,The length of the field SHENANDOAH_GC_CYCLE_DETAILS_START is 33.,274
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0,read,Long Identifier,The length of the field PRINT_CMS_STATISTICS_ITERATIONS is 31.,274
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0,read,Long Identifier,The length of the field PRINT_CMS_STATISTICS_ITERATIONS_GROUP_BEFORE is 44.,274
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0,read,Long Identifier,The length of the field PRINT_CMS_STATISTICS_ITERATIONS_GROUP_AFTER is 43.,274
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0,read,Long Identifier,The length of the field PRINT_TENURING_DISTRIBUTION_PATTERN_GROUP_BEFORE is 48.,274
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0,read,Long Identifier,The length of the field PRINT_TENURING_DISTRIBUTION_PATTERN_GROUP_AFTER is 47.,274
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0,read,Long Identifier,The length of the field PRINT_ADAPTIVE_SIZE_GROUP_BEFORE is 32.,274
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0,read,Long Identifier,The length of the field PRINT_ADAPTIVE_SIZE_GROUP_AFTER is 31.,274
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0,read,Long Method,The method has 177 lines of code.,274
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0,read,Long Statement,The length of the statement "if (getLogger().isLoggable(Level.INFO)) getLogger().info("Reading Sun / Oracle 1.4.x / 1.5.x / 1.6.x / 1.7.x / 1.8.x format...");" is 129.,274
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0,read,Long Statement,The length of the statement "getLogger().severe("printCmsStatisticsIterationsMatcher did not match for line " + in.getLineNumber() + ": '"+ line+ "'");" is 122.,274
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0,read,Long Statement,The length of the statement "line=printCmsStatisticsIterationsMatcher.group(PRINT_CMS_STATISTICS_ITERATIONS_GROUP_BEFORE) + printCmsStatisticsIterationsMatcher.group(PRINT_CMS_STATISTICS_ITERATIONS_GROUP_AFTER);" is 182.,274
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0,read,Long Statement,The length of the statement "line=printTenuringDistributionMatcher.group(PRINT_TENURING_DISTRIBUTION_PATTERN_GROUP_BEFORE) + printTenuringDistributionMatcher.group(PRINT_TENURING_DISTRIBUTION_PATTERN_GROUP_AFTER);" is 184.,274
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0,read,Long Statement,The length of the statement "model.add(parseLine(printAdaptiveSizePolicyMatcher.group(PRINT_ADAPTIVE_SIZE_GROUP_BEFORE) + printAdaptiveSizePolicyMatcher.group(PRINT_ADAPTIVE_SIZE_GROUP_AFTER)`parsePosition));" is 179.,274
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0,read,Magic Number,The method contains a magic number: 2,274
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0,skipGcCycleDetails,Long Identifier,The length of the field SHENANDOAH_INTRODUCTION_TO_GC_STATISTICS is 40.,510
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0,lineHasPrintFlsStatistics,Long Statement,The length of the statement "return line.endsWith(BEFORE_GC) || line.endsWith(AFTER_GC) || line.indexOf(CMS_LARGE_BLOCK) > 0 || line.indexOf(SIZE) > 0;" is 122.,546
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0,handlePrintFlsStatistics,Complex Method,Cyclomatic complexity of the method is 9,553
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0,handlePrintFlsStatistics,Long Parameter List,The method has 5 parameters. ,553
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0,findEndOfNextEventNameBefore,Long Statement,The length of the statement "while (index >= 0 && (ch == ' ' || Character.isDigit(ch) || ch == 'T' || ch == '.' || ch == ':' || ch == '+' || ch == '-'));" is 124.,608
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0,isPrintTenuringDistribution,Long Statement,The length of the statement "return line.endsWith("[DefNew") || line.endsWith("[ParNew") || line.endsWith(" (promotion failed)")|| line.endsWith("[GC")|| (line.contains("[GC (") && (line.endsWith(") ") || line.endsWith(")")));" is 197.,631
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0,parseLine,Complex Method,Cyclomatic complexity of the method is 8,644
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderIBM_J9_R28,read,Complex Method,Cyclomatic complexity of the method is 20,55
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderIBM_J9_R28,read,Long Statement,The length of the statement "if (getLogger().isLoggable(Level.FINE)) getLogger().fine("event at " + in.getLineNumber() + " doesn't contain any information` the parser can handle");" is 151.,55
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderIBM_J9_R28,read,Long Statement,The length of the statement "if (getLogger().isLoggable(Level.FINE)) getLogger().log(Level.FINE`"line " + in.getLineNumber() + ": "+ e.getMessage()`e);" is 122.,55
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderIBM_J9_R28,read,Long Statement,The length of the statement "if (getLogger().isLoggable(Level.FINE)) getLogger().log(Level.FINE`"line " + in.getLineNumber() + ": "+ e.getMessage()`e);" is 122.,55
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderIBM_J9_R28,handleVerboseGC,Long Statement,The length of the statement "assert startElement.getName().getLocalPart().equals(VERBOSEGC) : "expected name of startElement: " + VERBOSEGC + "` but got "+ startElement.getName();" is 150.,130
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderIBM_J9_R28,handleExclusiveStart,Long Statement,The length of the statement "event.setDateStamp(ZonedDateTime.of(LocalDateTime.parse(getAttributeValue(startElement`"timestamp")`dateTimeFormatter)`ZoneId.systemDefault()));" is 144.,155
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderIBM_J9_R28,handleExclusiveStart,Long Statement,The length of the statement "if (getLogger().isLoggable(Level.FINE)) getLogger().log(Level.FINE`"line " + in.getLineNumber() + ": "+ e.getMessage()`e);" is 122.,155
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderIBM_J9_R28,handleExclusiveEnd,Magic Number,The method contains a magic number: 1000,170
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderIBM_J9_R28,handleGcStart,Complex Method,Cyclomatic complexity of the method is 9,186
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderIBM_J9_R28,handleGcEnd,Complex Method,Cyclomatic complexity of the method is 8,231
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderIBM_J9_R28,toKiloBytes,Magic Number,The method contains a magic number: 1024,281
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderHPUX1_4_1,read,Complex Method,Cyclomatic complexity of the method is 9,34
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderHPUX1_4_1,read,Long Statement,The length of the statement "getLogger().warning("Malformed line (" + in.getLineNumber() + "). Wrong number of tokens ("+ st.countTokens()+ "): "+ line);" is 124.,34
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderHPUX1_4_1,read,Long Statement,The length of the statement "if (getLogger().isLoggable(Level.WARNING)) getLogger().warning("Malformed line (" + in.getLineNumber() + "). Expected \"<GC:\" in "+ line);" is 139.,34
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderHPUX1_4_1,read,Magic Number,The method contains a magic number: 22,34
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderHPUX1_4_1,read,Magic Number,The method contains a magic number: 1024,34
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderHPUX1_4_1,read,Magic Number,The method contains a magic number: 1024,34
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderHPUX1_4_1,read,Magic Number,The method contains a magic number: 1024,34
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderHPUX1_4_1,read,Magic Number,The method contains a magic number: 1024,34
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderHPUX1_4_1,read,Magic Number,The method contains a magic number: 1024,34
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderHPUX1_4_1,read,Magic Number,The method contains a magic number: 1024,34
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderHPUX1_4_1,read,Magic Number,The method contains a magic number: 1024,34
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderHPUX1_4_1,read,Magic Number,The method contains a magic number: 1024,34
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderHPUX1_4_1,read,Magic Number,The method contains a magic number: 1024,34
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderHPUX1_4_1,findType,Magic Number,The method contains a magic number: 2,211
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderHPUX1_4_1,findType,Magic Number,The method contains a magic number: 3,211
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderHPUX1_4_1,findType,Magic Number,The method contains a magic number: 4,211
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderHPUX1_4_1,findType,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@2aa44e43,211
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderJRockit1_6_0,read,Complex Method,Cyclomatic complexity of the method is 33,29
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderJRockit1_6_0,read,Long Method,The method has 119 lines of code.,29
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderJRockit1_6_0,read,Long Statement,The length of the statement "if (getLogger().isLoggable(Level.FINE)) getLogger().fine("Ignoring line " + in.getLineNumber() + ". Missing \"[memory ]\" marker: "+ line);" is 139.,29
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderJRockit1_6_0,read,Long Statement,The length of the statement "if (getLogger().isLoggable(Level.INFO)) getLogger().warning("GC log contains OutOfMemory error: " + line.substring(startLog));" is 126.,29
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderJRockit1_6_0,read,Long Statement,The length of the statement "if (getLogger().isLoggable(Level.WARNING)) getLogger().warning("Malformed line (" + in.getLineNumber() + "). Missing colon after start time: "+ line);" is 150.,29
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderJRockit1_6_0,read,Magic Number,The method contains a magic number: 4,29
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderJRockit1_6_0,read,Magic Number,The method contains a magic number: 1000.0d,29
+gcviewer,com.tagtraum.perf.gcviewer.imp,ParseException,getMessage,Long Statement,The length of the statement "return super.getMessage() + (parsePosition != null ? (" Line " + parsePosition.getLineNumber() + ": "+ line) : (" Line: " + line));" is 131.,33
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_3_1,read,Complex Conditional,The conditional expression !"".equals(trimmedLine) && !trimmedLine.startsWith("<GC: ") && !trimmedLine.startsWith("<") is complex.,33
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_3_1,read,Complex Method,Cyclomatic complexity of the method is 16,33
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_3_1,read,Magic Number,The method contains a magic number: 1000.0d,33
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_3_1,read,Magic Number,The method contains a magic number: 2,33
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_3_1,read,Magic Number,The method contains a magic number: 2,33
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_3_1,read,Magic Number,The method contains a magic number: 3,33
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_3_1,read,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@500e32c9,33
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_3_1,parseTimeSinceLastAF,Magic Number,The method contains a magic number: 2,129
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_3_1,parseTimeSinceLastAF,Magic Number,The method contains a magic number: 1000.0d,129
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_3_1,parsePreUsed,Magic Number,The method contains a magic number: 1024L,135
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_3_1,parsePreUsedAFAction3,Magic Number,The method contains a magic number: 1024L,149
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_3_1,parsePostUsed,Magic Number,The method contains a magic number: 1024L,157
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_3_1,parseTotalAfterGC,Magic Number,The method contains a magic number: 1024L,165
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_3_1,parseTotalAfterHeapExpansion,Magic Number,The method contains a magic number: 3,171
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_3_1,parseTotalAfterHeapExpansion,Magic Number,The method contains a magic number: 1024L,171
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_3_1,parsePause,Magic Number,The method contains a magic number: 3,177
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_3_1,parsePause,Magic Number,The method contains a magic number: 1000.0d,177
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,read,Long Statement,The length of the statement "lines.map(line -> new ParseContext(line`partialEventsMap`infoMap)).filter(this::lineContainsParseableEvent).map(this::parseEvent).filter(context -> context.getCurrentEvent() != null).forEach(context -> model.add(context.getCurrentEvent()));" is 240.,212
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,parseEvent,Long Statement,The length of the statement "getLogger().warning(String.format("Failed to parse gc event (%s) on line number %d (line=\"%s\")"`e.toString()`in.getLineNumber()`context.getLine()));" is 150.,237
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,handleTail,Complex Method,Cyclomatic complexity of the method is 8,257
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,handleTail,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@3a33b003,257
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,updateEventDetails,Long Statement,The length of the statement "getLogger().warning(String.format("Didn't find parent event for partial event %s (line number %d` line=\"%s\""`event.toString()`in.getLineNumber()`context.getLine()));" is 167.,385
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,updateEventDetails,Long Statement,The length of the statement "getLogger().warning(String.format("Parent (%s) event for %s should be GCEvent (line number %d` line=\"%s\""`parentEvent.toString()`event.toString()`in.getLineNumber()`context.getLine()));" is 187.,385
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,parseTail,Complex Method,Cyclomatic complexity of the method is 8,398
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,parseTail,Long Statement,The length of the statement "else if (event.getExtendedType().getPattern().equals(GcPattern.GC) || event.getExtendedType().getPattern().equals(GcPattern.GC_PAUSE_DURATION)) {" is 145.,398
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,parseGcTail,Long Statement,The length of the statement "getLogger().warning(String.format("Unexpected tail present in the end of line number %d (expected nothing to be present` tail=\"%s\"; line=\"%s\")"`in.getLineNumber()`tail`context.getLine()));" is 192.,418
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,parseGcMemoryTail,Long Statement,The length of the statement "getLogger().warning(String.format("Expected only memory in the end of line number %d (line=\"%s\")"`in.getLineNumber()`context.getLine()));" is 139.,424
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,parseGcMemoryPauseTail,Long Statement,The length of the statement "getLogger().warning(String.format("Expected memory and pause in the end of line number %d (line=\"%s\")"`in.getLineNumber()`context.getLine()));" is 144.,433
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,parseGcPauseTail,Long Statement,The length of the statement "getLogger().warning(String.format("Expected only pause in the end of line number %d (line=\"%s\")"`in.getLineNumber()`context.getLine()));" is 138.,446
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,parseGcRegionTail,Long Statement,The length of the statement "getLogger().warning(String.format("Expected region information in the end of line number %d (line=\"%s\")"`in.getLineNumber()`context.getLine()));" is 146.,463
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,parseGcRegionTail,Magic Number,The method contains a magic number: 1024,463
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,parseGcRegionTail,Magic Number,The method contains a magic number: 1024,463
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,parseGcRegionTail,Magic Number,The method contains a magic number: 1024,463
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,parseGcMemoryPercentageTail,Long Statement,The length of the statement "getLogger().warning(String.format("Expected memory percentage in the end of line number %d (line=\"%s\")"`in.getLineNumber()`context.getLine()));" is 145.,482
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,parseGcHeapMemoryPercentageTail,Long Identifier,The length of the field PATTERN_HEAP_MEMORY_PERCENTAGE is 30.,494
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,parseGcHeapMemoryPercentageTail,Long Statement,The length of the statement "getLogger().warning(String.format("Expected heap memory percentage in the end of line number %d (line=\"%s\")"`in.getLineNumber()`context.getLine()));" is 150.,494
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,createGcEventWithStandardDecorators,Long Statement,The length of the statement "setTimeStampIfPresent(event`decoratorsMatcher.group(GROUP_DECORATORS_UPTIME)`decoratorsMatcher.group(GROUP_DECORATORS_UPTIME_UNIT));" is 132.,505
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,setPause,Magic Number,The method contains a magic number: 1000,542
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,setMemory,Long Identifier,The length of the field GROUP_MEMORY_CURRENT_TOTAL_UNIT is 31.,553
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,setMemory,Long Statement,The length of the statement "event.setPreUsed(getDataReaderTools().getMemoryInKiloByte(Integer.parseInt(matcher.group(GROUP_MEMORY_BEFORE))`matcher.group(GROUP_MEMORY_BEFORE_UNIT).charAt(0)`matcher.group(GROUP_MEMORY)));" is 191.,553
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,setMemory,Long Statement,The length of the statement "event.setPostUsed(getDataReaderTools().getMemoryInKiloByte(Integer.parseInt(matcher.group(GROUP_MEMORY_AFTER))`matcher.group(GROUP_MEMORY_AFTER_UNIT).charAt(0)`matcher.group(GROUP_MEMORY)));" is 190.,553
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,setMemory,Long Statement,The length of the statement "event.setTotal(getDataReaderTools().getMemoryInKiloByte(Integer.parseInt(matcher.group(GROUP_MEMORY_CURRENT_TOTAL))`matcher.group(GROUP_MEMORY_CURRENT_TOTAL_UNIT).charAt(0)`matcher.group(GROUP_MEMORY)));" is 203.,553
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,setMemoryHeapWithPercentage,Long Identifier,The length of the field GROUP_HEAP_MEMORY_PERCENTAGE_VALUE is 34.,563
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,setMemoryHeapWithPercentage,Long Identifier,The length of the field GROUP_HEAP_MEMORY_PERCENTAGE_UNIT is 33.,563
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,setMemoryHeapWithPercentage,Long Statement,The length of the statement "event.setTotal(getDataReaderTools().getMemoryInKiloByte(Integer.parseInt(matcher.group(GROUP_HEAP_MEMORY_PERCENTAGE_VALUE))`matcher.group(GROUP_HEAP_MEMORY_PERCENTAGE_UNIT).charAt(0)`matcher.group(GROUP_HEAP_MEMORY_PERCENTAGE)));" is 229.,563
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,setMemoryWithPercentage,Long Identifier,The length of the field GROUP_MEMORY_PERCENTAGE_BEFORE is 30.,568
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,setMemoryWithPercentage,Long Identifier,The length of the field GROUP_MEMORY_PERCENTAGE_BEFORE_UNIT is 35.,568
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,setMemoryWithPercentage,Long Identifier,The length of the field GROUP_MEMORY_PERCENTAGE_AFTER_UNIT is 34.,568
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,setMemoryWithPercentage,Long Identifier,The length of the field GROUP_MEMORY_PERCENTAGE_BEFORE_PERCENTAGE is 41.,568
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,setMemoryWithPercentage,Long Identifier,The length of the field GROUP_MEMORY_PERCENTAGE_AFTER_PERCENTAGE is 40.,568
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,setMemoryWithPercentage,Long Statement,The length of the statement "event.setPreUsed(getDataReaderTools().getMemoryInKiloByte(Integer.parseInt(matcher.group(GROUP_MEMORY_PERCENTAGE_BEFORE))`matcher.group(GROUP_MEMORY_PERCENTAGE_BEFORE_UNIT).charAt(0)`matcher.group(GROUP_MEMORY_PERCENTAGE)));" is 224.,568
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,setMemoryWithPercentage,Long Statement,The length of the statement "event.setPostUsed(getDataReaderTools().getMemoryInKiloByte(Integer.parseInt(matcher.group(GROUP_MEMORY_PERCENTAGE_AFTER))`matcher.group(GROUP_MEMORY_PERCENTAGE_AFTER_UNIT).charAt(0)`matcher.group(GROUP_MEMORY_PERCENTAGE)));" is 223.,568
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,setMemoryWithPercentage,Magic Number,The method contains a magic number: 100,568
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,setTimeStampIfPresent,Magic Number,The method contains a magic number: 1000,586
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderUnifiedJvmLogging,enrichContext,Long Statement,The length of the statement "getLogger().warning(String.format("Failed to parse heap region size on line %d (line=%s)"`in.getLineNumber()`context.getLine()));" is 129.,622
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_2_2,read,Complex Method,Cyclomatic complexity of the method is 8,26
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_2_2,read,Long Statement,The length of the statement "int percentUsed=Integer.parseInt(line.substring(line.length() - "XX% free>".length()`line.length() - "% free>".length()));" is 122.,26
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_2_2,read,Magic Number,The method contains a magic number: 5,26
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_2_2,read,Magic Number,The method contains a magic number: 5,26
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_2_2,read,Magic Number,The method contains a magic number: 1000.0d,26
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_2_2,read,Magic Number,The method contains a magic number: 1024L,26
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_2_2,read,Magic Number,The method contains a magic number: 100l,26
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_2_2,read,Magic Number,The method contains a magic number: 1024L,26
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_2_2,read,Magic Number,The method contains a magic number: 2,26
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_2_2,read,Magic Number,The method contains a magic number: 3,26
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_2_2,read,Magic Number,The method contains a magic number: 1024,26
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_2_2,read,Magic Number,The method contains a magic number: 1024,26
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_2_2,read,Magic Number,The method contains a magic number: 1024,26
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_2_2,read,Magic Number,The method contains a magic number: 1000.0d,26
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderFactory,getDataReader,Complex Method,Cyclomatic complexity of the method is 11,29
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderFactory,getDataReader,Long Statement,The length of the statement "if (getLogger().isLoggable(Level.SEVERE)) getLogger().severe(LocalisationHelper.getString("datareaderfactory_instantiation_failed") + "\ncontent:" + "\n"+ s);" is 158.,29
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderFactory,getDataReaderBySample,Complex Conditional,The conditional expression s.contains(" (young)") || s.contains("G1Ergonomics") || s.contains(" (mixed)")|| s.contains("-XX:+UseG1GC") is complex.,109
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderFactory,getDataReaderBySample,Complex Conditional,The conditional expression s.contains("[GC") || s.contains("[Full GC") || s.contains("[Inc GC") is complex.,109
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderFactory,getDataReaderBySample,Complex Conditional,The conditional expression s.indexOf("<GC: ") == 0 && s.contains(">") && new StringTokenizer(s.substring(0`s.indexOf(">") + 1)`" ").countTokens() == 20 is complex.,109
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderFactory,getDataReaderBySample,Complex Conditional,The conditional expression s.startsWith("<GC: ") && s.contains(">") && new StringTokenizer(s.substring(0`s.indexOf(">") + 1)`" ").countTokens() == 22 is complex.,109
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderFactory,getDataReaderBySample,Complex Conditional,The conditional expression s.contains("<verbosegc") && (s.contains("version=\"R26_Java6") || s.contains("version=\"R27_Java7") || s.contains("version=\"R28_Java8")) is complex.,109
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderFactory,getDataReaderBySample,Complex Method,Cyclomatic complexity of the method is 43,109
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderFactory,getDataReaderBySample,Long Statement,The length of the statement "if (getLogger().isLoggable(Level.INFO)) getLogger().info("File format: Sun / Oracle / OpenJdk 1.6.x .. 1.8.x G1 collector");" is 124.,109
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderFactory,getDataReaderBySample,Long Statement,The length of the statement "else if (s.indexOf("<GC: ") == 0 && s.contains(">") && new StringTokenizer(s.substring(0`s.indexOf(">") + 1)`" ").countTokens() == 20) {" is 136.,109
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderFactory,getDataReaderBySample,Long Statement,The length of the statement "else if (s.startsWith("<GC: ") && s.contains(">") && new StringTokenizer(s.substring(0`s.indexOf(">") + 1)`" ").countTokens() == 22) {" is 134.,109
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderFactory,getDataReaderBySample,Long Statement,The length of the statement "else if (s.contains("<verbosegc") && (s.contains("version=\"R26_Java6") || s.contains("version=\"R27_Java7") || s.contains("version=\"R28_Java8"))) {" is 149.,109
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderFactory,getDataReaderBySample,Magic Number,The method contains a magic number: 20,109
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderFactory,getDataReaderBySample,Magic Number,The method contains a magic number: 22,109
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderFactory,isGZipped,Magic Number,The method contains a magic number: 2,227
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderFactory,isGZipped,Magic Number,The method contains a magic number: 8,227
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderJRockit1_4_2,read,Complex Method,Cyclomatic complexity of the method is 27,28
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderJRockit1_4_2,read,Long Method,The method has 105 lines of code.,28
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderJRockit1_4_2,read,Long Statement,The length of the statement "if (getLogger().isLoggable(Level.FINE)) getLogger().fine("Ignoring line " + in.getLineNumber() + ". Missing \"[memory ]\" marker: "+ line);" is 139.,28
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderJRockit1_4_2,read,Long Statement,The length of the statement "if (getLogger().isLoggable(Level.WARNING)) getLogger().warning("Malformed line (" + in.getLineNumber() + "). Missing colon after start time: "+ line);" is 150.,28
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderJRockit1_4_2,read,Magic Number,The method contains a magic number: 3,28
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderJRockit1_4_2,read,Magic Number,The method contains a magic number: 2,28
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderJRockit1_4_2,read,Magic Number,The method contains a magic number: 1000.0d,28
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_4_2,read,Complex Conditional,The conditional expression !"".equals(trimmedLine) && !trimmedLine.startsWith("<GC: ") && !trimmedLine.startsWith("<") is complex.,39
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_4_2,read,Complex Method,Cyclomatic complexity of the method is 18,39
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_4_2,read,Magic Number,The method contains a magic number: 1000.0d,39
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_4_2,read,Magic Number,The method contains a magic number: 2,39
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_4_2,read,Magic Number,The method contains a magic number: 2,39
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_4_2,read,Magic Number,The method contains a magic number: 3,39
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_4_2,read,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@475d6aae,39
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_4_2,parseTimeSinceLastAF,Magic Number,The method contains a magic number: 2,137
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_4_2,parseTimeSinceLastAF,Magic Number,The method contains a magic number: 1000.0d,137
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_4_2,parsePreUsed,Magic Number,The method contains a magic number: 1024L,143
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_4_2,parsePreUsedAFAction3,Magic Number,The method contains a magic number: 1024L,157
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_4_2,parsePostUsed,Magic Number,The method contains a magic number: 1024L,165
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_4_2,parseTotalAfterGC,Magic Number,The method contains a magic number: 1024L,173
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_4_2,parseTotalAfterHeapExpansion,Magic Number,The method contains a magic number: 3,179
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_4_2,parseTotalAfterHeapExpansion,Magic Number,The method contains a magic number: 1024L,179
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_4_2,parsePause,Magic Number,The method contains a magic number: 3,185
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_4_2,parsePause,Magic Number,The method contains a magic number: 1000.0d,185
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_3_0,read,Complex Conditional,The conditional expression (!trimmedLine.equals("")) && (!trimmedLine.startsWith("<GC: ")) && (!(trimmedLine.startsWith("<") && trimmedLine.endsWith(">"))) is complex.,27
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_3_0,read,Complex Method,Cyclomatic complexity of the method is 16,27
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_3_0,read,Magic Number,The method contains a magic number: 2,27
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_3_0,read,Magic Number,The method contains a magic number: 3,27
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_3_0,read,Magic Number,The method contains a magic number: 4,27
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_3_0,read,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@4f03e250,27
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_3_0,parseTimeSinceLastAF,Magic Number,The method contains a magic number: 2,88
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_3_0,parseTimeSinceLastAF,Magic Number,The method contains a magic number: 1000.0d,88
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_3_0,parsePreUsed,Magic Number,The method contains a magic number: 1024l,94
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_3_0,parsePostUsed,Magic Number,The method contains a magic number: 1024L,106
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_3_0,parseTotalAfterGC,Magic Number,The method contains a magic number: 1024L,113
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_3_0,parseTotalAfterHeapExpansion,Magic Number,The method contains a magic number: 3,119
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_3_0,parseTotalAfterHeapExpansion,Magic Number,The method contains a magic number: 1024L,119
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_3_0,parsePause,Magic Number,The method contains a magic number: 3,125
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderIBM1_3_0,parsePause,Magic Number,The method contains a magic number: 1000.0d,125
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderGo,parseMatch,Magic Number,The method contains a magic number: 2,78
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderGo,parseMatch,Magic Number,The method contains a magic number: 4,78
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderGo,parseMatch,Magic Number,The method contains a magic number: 1000.0,78
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderGo,parseMatch,Magic Number,The method contains a magic number: 6,78
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderGo,parseMatch,Magic Number,The method contains a magic number: 1000.0,78
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderGo,parseMatch,Magic Number,The method contains a magic number: 12,78
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderGo,parseMatch,Magic Number,The method contains a magic number: 1024,78
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderGo,parseMatch,Magic Number,The method contains a magic number: 13,78
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderGo,parseMatch,Magic Number,The method contains a magic number: 1024,78
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderGo,parseMatch,Magic Number,The method contains a magic number: 14,78
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderGo,parseMatch,Magic Number,The method contains a magic number: 1024,78
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderHPUX1_2,read,Complex Method,Cyclomatic complexity of the method is 9,28
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderHPUX1_2,read,Long Statement,The length of the statement "if (getLogger().isLoggable(Level.WARNING)) getLogger().warning("Malformed line (" + in.getLineNumber() + "). Wrong number of tokens ("+ st.countTokens()+ "): "+ line);" is 167.,28
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderHPUX1_2,read,Long Statement,The length of the statement "if (getLogger().isLoggable(Level.WARNING)) getLogger().warning("Malformed line (" + in.getLineNumber() + "). Expected \"<GC:\" in "+ line);" is 139.,28
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderHPUX1_2,read,Magic Number,The method contains a magic number: 20,28
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderHPUX1_2,read,Magic Number,The method contains a magic number: 1024,28
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderHPUX1_2,read,Magic Number,The method contains a magic number: 1024,28
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderHPUX1_2,read,Magic Number,The method contains a magic number: 1024,28
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderHPUX1_2,read,Magic Number,The method contains a magic number: 1024,28
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderHPUX1_2,read,Magic Number,The method contains a magic number: 1024,28
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderHPUX1_2,read,Magic Number,The method contains a magic number: 1024,28
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderHPUX1_2,read,Magic Number,The method contains a magic number: 1024,28
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderHPUX1_2,read,Magic Number,The method contains a magic number: 1024,28
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderHPUX1_2,read,Magic Number,The method contains a magic number: 1024,28
+gcviewer,com.tagtraum.perf.gcviewer.imp,MonitoredBufferedInputStream,MonitoredBufferedInputStream,Magic Number,The method contains a magic number: 8192,30
+gcviewer,com.tagtraum.perf.gcviewer.imp,MonitoredBufferedInputStream,MonitoredBufferedInputStream,Magic Number,The method contains a magic number: 100L,34
+gcviewer,com.tagtraum.perf.gcviewer.imp,MonitoredBufferedInputStream,updateCounters,Magic Number,The method contains a magic number: 100,46
+gcviewer,com.tagtraum.perf.gcviewer.imp,MonitoredBufferedInputStream,updateCounters,Magic Number,The method contains a magic number: 100,46
+gcviewer,com.tagtraum.perf.gcviewer.imp,MonitoredBufferedInputStream,updateCounters,Magic Number,The method contains a magic number: 100,46
+gcviewer,com.tagtraum.perf.gcviewer.imp,MonitoredBufferedInputStream,getPercentageRead,Magic Number,The method contains a magic number: 100,104
+gcviewer,com.tagtraum.perf.gcviewer.imp,MonitoredBufferedInputStream,getPercentageRead,Magic Number,The method contains a magic number: 100L,104
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderTools,getMemoryInKiloByte,Magic Number,The method contains a magic number: 1024,24
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderTools,getMemoryInKiloByte,Magic Number,The method contains a magic number: 1024,24
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderTools,getMemoryInKiloByte,Magic Number,The method contains a magic number: 1024,24
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderTools,getMemoryInKiloByte,Magic Number,The method contains a magic number: 1024,24
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderTools,getLookupTypeName,Magic Number,The method contains a magic number: 2,104
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0G1,read,Complex Method,Cyclomatic complexity of the method is 33,179
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0G1,read,Long Identifier,The length of the field GC_CONCURRENT_STRING_DEDUPLICATION is 34.,179
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0G1,read,Long Method,The method has 160 lines of code.,179
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0G1,read,Magic Number,The method contains a magic number: 2,179
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0G1,read,Magic Number,The method contains a magic number: 200,179
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0G1,hasIncompleteConcurrentEvent,Long Statement,The length of the statement "return !nextIsTimestamp(line`parsePosition) && !nextIsDatestamp(line`parsePosition) && line.contains("incomplete_concurrent_event");" is 132.,375
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0G1,isPrintTenuringDistribution,Long Statement,The length of the statement "return (line.indexOf("GC pause") >= 0 && line.endsWith(")")) || (line.indexOf(Type.FULL_GC.getName()) >= 0 && line.endsWith(")"));" is 130.,382
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0G1,parseDetails,Complex Conditional,The conditional expression line.charAt(0) != ' ' && !hasTimes && (nextIsDatestamp(line`pos) || nextIsTimestamp(line`pos)) is complex.,394
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0G1,parseDetails,Complex Method,Cyclomatic complexity of the method is 11,394
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0G1,parseDetails,Long Identifier,The length of the field INCOMPLETE_CONCURRENT_EVENT_INDICATOR is 37.,394
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0G1,parseDetails,Long Parameter List,The method has 5 parameters. ,394
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0G1,parseIncompleteConcurrentEvent,Long Statement,The length of the statement "model.add(parseConcurrentEvent(line`pos`previousEvent != null ? previousEvent.getDatestamp() : null`previousEvent != null ? previousEvent.getTimestamp() : 0`type));" is 164.,526
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0G1,parseConcurrentEvent,Long Parameter List,The method has 5 parameters. ,596
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0G1,skipLinesRespectingConcurrentEvents,Long Identifier,The length of the field INCOMPLETE_CONCURRENT_EVENT_INDICATOR is 37.,625
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0G1,skipLinesRespectingConcurrentEvents,Magic Number,The method contains a magic number: 200,625
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_6_0G1,skipLinesRespectingConcurrentEvents,Magic Number,The method contains a magic number: 200,625
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderIBMi5OS1_4_2,read,Complex Method,Cyclomatic complexity of the method is 16,38
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderIBMi5OS1_4_2,read,Magic Number,The method contains a magic number: 1000.0d,38
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderIBMi5OS1_4_2,read,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@6eba1903,38
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderIBMi5OS1_4_2,parseInitialHeap,Magic Number,The method contains a magic number: 17,157
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderIBMi5OS1_4_2,parseTotalAfterGC,Magic Number,The method contains a magic number: 17,170
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderIBMi5OS1_4_2,parseFreed,Magic Number,The method contains a magic number: 14,183
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderIBMi5OS1_4_2,parseCurrentCycle,Magic Number,The method contains a magic number: 29,195
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderIBMi5OS1_4_2,parsePreviousCycle,Magic Number,The method contains a magic number: 30,207
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderIBMi5OS1_4_2,parsePause,Magic Number,The method contains a magic number: 23,219
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderIBMi5OS1_4_2,parsePause,Magic Number,The method contains a magic number: 1000.0d,219
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderJRockit1_5_0,read,Complex Method,Cyclomatic complexity of the method is 39,29
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderJRockit1_5_0,read,Long Method,The method has 131 lines of code.,29
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderJRockit1_5_0,read,Long Statement,The length of the statement "if (getLogger().isLoggable(Level.FINE)) getLogger().fine("Ignoring line " + in.getLineNumber() + ". Missing \"[memory ]\" marker: "+ line);" is 139.,29
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderJRockit1_5_0,read,Long Statement,The length of the statement "if (getLogger().isLoggable(Level.WARNING)) getLogger().warning("GC log contains OutOfMemory error: " + line.substring(startTimeIndex));" is 135.,29
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderJRockit1_5_0,read,Long Statement,The length of the statement "if (getLogger().isLoggable(Level.WARNING)) getLogger().warning("Malformed line (" + in.getLineNumber() + "). Missing colon after start time: "+ line);" is 150.,29
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderJRockit1_5_0,read,Magic Number,The method contains a magic number: 2,29
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderJRockit1_5_0,read,Magic Number,The method contains a magic number: 3,29
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderJRockit1_5_0,read,Magic Number,The method contains a magic number: 1000.0d,29
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_3_1,read,Complex Method,Cyclomatic complexity of the method is 11,32
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_3_1,read,Empty catch clause,The method has an empty catch block.,32
+gcviewer,com.tagtraum.perf.gcviewer.imp,DataReaderSun1_3_1,read,Magic Number,The method contains a magic number: 64,32
+gcviewer,com.tagtraum.perf.gcviewer.imp,AbstractDataReader,AbstractDataReader,Magic Number,The method contains a magic number: 64,28
+gcviewer,com.tagtraum.perf.gcviewer.imp,AbstractDataReader,AbstractDataReader,Magic Number,The method contains a magic number: 1024,28
+gcviewer,com.tagtraum.perf.gcviewer,GCViewer,doMain,Magic Number,The method contains a magic number: 3,49
+gcviewer,com.tagtraum.perf.gcviewer,GCViewer,doMain,Magic Number,The method contains a magic number: 2,49
+gcviewer,com.tagtraum.perf.gcviewer,GCViewer,usage,Long Statement,The length of the statement "System.out.println("java -jar gcviewer.jar [<gc-log-file|url>];[<gc-log-file|url>];[...] -> opens gui and loads given files as series of rotated logfiles");" is 156.,110
+gcviewer,com.tagtraum.perf.gcviewer,GCViewer,usage,Long Statement,The length of the statement "System.out.println("java -jar gcviewer.jar [<gc-log-file|url>];[<gc-log-file|url>];[...] [<export.csv>] -> cmdline: loads given files as series of rotated logfiles and writes report to <export.csv>");" is 200.,110
+gcviewer,com.tagtraum.perf.gcviewer,GCViewer,usage,Long Statement,The length of the statement "System.out.println("java -jar gcviewer.jar [<gc-log-file>] [<export.csv>] [<chart.png>] -> cmdline: writes report to <export.csv> and renders gc chart to <chart.png>");" is 168.,110
+gcviewer,com.tagtraum.perf.gcviewer,GCViewer,usage,Long Statement,The length of the statement "System.out.println("java -jar gcviewer.jar [<gc-log-file|url>];[<gc-log-file|url>];[...] [<export.csv>] [<chart.png>] -> cmdline: loads given files as series of rotated logfiles and writes report to <export.csv> and renders gc chart to <chart.png>");" is 250.,110
+gcviewer,com.tagtraum.perf.gcviewer,GCViewer,usage,Long Statement,The length of the statement "System.out.println("java -jar gcviewer.jar [<gc-log-file|url>] [<export.csv>] [<chart.png>] [-t <SUMMARY` CSV` CSV_TS` PLAIN` SIMPLE>]");" is 137.,110
+gcviewer,com.tagtraum.perf.gcviewer,GCViewer,usage,Long Statement,The length of the statement "System.out.println("java -jar gcviewer.jar [<gc-log-file|url>];[<gc-log-file|url>];[...] [<export.csv>] [<chart.png>] [-t <SUMMARY` CSV` CSV_TS` PLAIN` SIMPLE>]");" is 163.,110
+gcviewer,com.tagtraum.perf.gcviewer,GCViewerArgsParserException,formatLegalDataWriterTypes,Magic Number,The method contains a magic number: 2,17
+gcviewer,com.tagtraum.perf.gcviewer.util,HttpUrlConnectionHelper,checkContentDecodingForInputStream,Magic Number,The method contains a magic number: 4096,33
+gcviewer,com.tagtraum.perf.gcviewer.util,HttpUrlConnectionHelper,openInputStream,Long Statement,The length of the statement "LOGGER.log(Level.INFO`"Reading " + (contentLengthLong < 0L ? "?" : Long.toString(contentLengthLong)) + " bytes from "+ httpConn.getURL()+ "; contentType = "+ contentType+ "; contentEncoding = "+ contentEncoding+ "; last modified = "+ (lastModified <= 0L ? "-" : new Date(lastModified).toString()));" is 298.,96
+gcviewer,com.tagtraum.perf.gcviewer.util,HttpUrlConnectionHelper,openInputStream,Magic Number,The method contains a magic number: 100,96
+gcviewer,com.tagtraum.perf.gcviewer.util,HttpUrlConnectionHelper,openInputStream,Magic Number,The method contains a magic number: 2,96
+gcviewer,com.tagtraum.perf.gcviewer.util,TimeFormat,format,Magic Number,The method contains a magic number: 365,43
+gcviewer,com.tagtraum.perf.gcviewer.util,TimeFormat,format,Magic Number,The method contains a magic number: 3,43
+gcviewer,com.tagtraum.perf.gcviewer.util,MemoryFormat,MemoryFormat,Magic Number,The method contains a magic number: 3,21
+gcviewer,com.tagtraum.perf.gcviewer.util,MemoryFormat,formatToFormatted,Magic Number,The method contains a magic number: 3,83
+gcviewer,com.tagtraum.perf.gcviewer.util,NumberParser,parseInt,Complex Method,Cyclomatic complexity of the method is 11,21
+gcviewer,com.tagtraum.perf.gcviewer.util,NumberParser,parseInt,Magic Number,The method contains a magic number: 9,21
+gcviewer,com.tagtraum.perf.gcviewer.util,NumberParser,parseInt,Magic Number,The method contains a magic number: 10,21
+gcviewer,com.tagtraum.perf.gcviewer.util,NumberParser,parseInt,Complex Method,Cyclomatic complexity of the method is 11,68
+gcviewer,com.tagtraum.perf.gcviewer.util,NumberParser,parseInt,Magic Number,The method contains a magic number: 9,68
+gcviewer,com.tagtraum.perf.gcviewer.util,NumberParser,parseInt,Magic Number,The method contains a magic number: 10,68
+gcviewer,com.tagtraum.perf.gcviewer.util,NumberParser,parseLong,Complex Method,Cyclomatic complexity of the method is 11,116
+gcviewer,com.tagtraum.perf.gcviewer.util,NumberParser,parseLong,Magic Number,The method contains a magic number: 9,116
+gcviewer,com.tagtraum.perf.gcviewer.util,NumberParser,parseLong,Magic Number,The method contains a magic number: 10L,116
+gcviewer,com.tagtraum.perf.gcviewer.util,NumberParser,parseLong,Complex Method,Cyclomatic complexity of the method is 11,165
+gcviewer,com.tagtraum.perf.gcviewer.util,NumberParser,parseLong,Magic Number,The method contains a magic number: 9,165
+gcviewer,com.tagtraum.perf.gcviewer.util,NumberParser,parseLong,Magic Number,The method contains a magic number: 10L,165
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,AbstractGCModelLoaderImpl,done,Long Statement,The length of the statement "if (logger.isLoggable(Level.WARNING)) logger.log(Level.WARNING`"Failed to create GCModel from " + getGcResource().getResourceName()`e);" is 135.,27
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GcSeriesLoader,getCreationDate,Long Statement,The length of the statement "logger.log(Level.WARNING`"Logfile contains neither date- nor timestamp. Using file creation date as" + " fallback. Consider using -XX:+PrintGCDateStamps to enable logging of dates for GC events.");" is 197.,57
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GcSeriesLoader,sortResources,Long Statement,The length of the statement "List<GCModel> sortedModels=startTimeToGcModel.entrySet().stream().sorted((x`y) -> x.getKey().compareTo(y.getKey())).map(Map.Entry::getValue).collect(Collectors.toList());" is 170.,97
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiController,applyPreferences,Long Statement,The length of the statement "for ( Entry<String`JCheckBoxMenuItem> menuEntry : ((GCViewerGuiMenuBar)gui.getJMenuBar()).getViewMenuItems().entrySet()) {" is 122.,30
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiController,applyPreferences,Long Statement,The length of the statement "gui.setBounds(preferences.getWindowX()`preferences.getWindowY()`preferences.getWindowWidth()`preferences.getWindowHeight());" is 124.,30
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiController,applyPreferences,Magic Number,The method contains a magic number: 800,30
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiController,applyPreferences,Magic Number,The method contains a magic number: 600,30
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiController,copyPreferencesFromGui,Long Statement,The length of the statement "for ( Entry<String`JCheckBoxMenuItem> menuEntry : ((GCViewerGuiMenuBar)gui.getJMenuBar()).getViewMenuItems().entrySet()) {" is 122.,76
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiController,copyPreferencesFromGui,Long Statement,The length of the statement "for ( GCResourceGroup urlSet : ((GCViewerGuiMenuBar)gui.getJMenuBar()).getRecentGCResourcesModel().getResourceNameGroups()) {" is 125.,76
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiInternalFrameController,internalFrameClosing,Magic Number,The method contains a magic number: 2,36
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiInternalFrameController,internalFrameActivated,Magic Number,The method contains a magic number: 2,69
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiInternalFrameController,updateMenuItemState,Long Statement,The length of the statement "getToolBar(e).getZoomComboBox().setSelectedItem((int)(getSelectedGCDocument(e).getModelChart().getScaleFactor() * 1000.0) + "%");" is 129.,124
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiInternalFrameController,updateMenuItemState,Magic Number,The method contains a magic number: 1000.0,124
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCModelLoaderControllerImpl,openGCResource,Long Statement,The length of the statement "document.setDropTarget(new DropTarget(document`DnDConstants.ACTION_COPY`new FileDropTargetListener(this`DropFlavor.ADD)));" is 122.,124
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,ViewMenuController,actionPerformed,Complex Method,Cyclomatic complexity of the method is 16,33
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,ViewMenuController,propertyChange,Long Statement,The length of the statement "((GCViewerGuiMenuBar)gui.getJMenuBar()).getViewMenuItems().get(GCPreferences.SHOW_DATE_STAMP).setSelected((Boolean)evt.getNewValue());" is 134.,88
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiBuilder,initActionMap,Long Statement,The length of the statement "OSXSupport.initializeMacOSX(actions.get(ActionCommands.ABOUT.toString())`actions.get(ActionCommands.EXIT.toString())`null`icon`gui);" is 132.,50
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiBuilder,initDesktopPane,Long Statement,The length of the statement "desktopPane.setDropTarget(new DropTarget(gui`DnDConstants.ACTION_COPY`new FileDropTargetListener(controller`DropFlavor.OPEN)));" is 127.,82
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiBuilder,initMenuBar,Long Identifier,The length of the identifier recentResourceNamesMenuController is 33.,91
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiBuilder,initMenuBar,Long Method,The method has 138 lines of code.,91
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiBuilder,initMenuBar,Long Statement,The length of the statement "RecentGCResourcesMenuController recentResourceNamesMenuController=new RecentGCResourcesMenuController(controller`recentResourceNamesMenu);" is 138.,91
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiBuilder,initMenuBar,Long Statement,The length of the statement "StayOpenCheckBoxMenuItem menuItemShowModelMetricsPanel=new StayOpenCheckBoxMenuItem(LocalisationHelper.getString("main_frame_menuitem_show_data_panel")`true);" is 158.,91
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiBuilder,initMenuBar,Long Statement,The length of the statement "menuItemShowModelMetricsPanel.setMnemonic(LocalisationHelper.getString("main_frame_menuitem_mnemonic_show_data_panel").charAt(0));" is 130.,91
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiBuilder,initMenuBar,Long Statement,The length of the statement "StayOpenCheckBoxMenuItem menuItemShowDateStamp=new StayOpenCheckBoxMenuItem(LocalisationHelper.getString("main_frame_menuitem_show_date_stamp")`true);" is 150.,91
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiBuilder,initMenuBar,Long Statement,The length of the statement "menuItemShowDateStamp.setMnemonic(LocalisationHelper.getString("main_frame_menuitem_mnemonic_show_date_stamp").charAt(0));" is 122.,91
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiBuilder,initMenuBar,Long Statement,The length of the statement "StayOpenCheckBoxMenuItem menuItemAntiAlias=new StayOpenCheckBoxMenuItem(LocalisationHelper.getString("main_frame_menuitem_antialias")`true);" is 140.,91
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiBuilder,initMenuBar,Long Statement,The length of the statement "StayOpenCheckBoxMenuItem menuItemFullGCLines=new StayOpenCheckBoxMenuItem(LocalisationHelper.getString("main_frame_menuitem_full_gc_lines")`true);" is 146.,91
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiBuilder,initMenuBar,Long Statement,The length of the statement "StayOpenCheckBoxMenuItem menuItemIncGCLines=new StayOpenCheckBoxMenuItem(LocalisationHelper.getString("main_frame_menuitem_inc_gc_lines")`true);" is 144.,91
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiBuilder,initMenuBar,Long Statement,The length of the statement "StayOpenCheckBoxMenuItem menuItemGcTimesLine=new StayOpenCheckBoxMenuItem(LocalisationHelper.getString("main_frame_menuitem_gc_times_line")`true);" is 146.,91
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiBuilder,initMenuBar,Long Statement,The length of the statement "StayOpenCheckBoxMenuItem menuItemGcTimesRectangle=new StayOpenCheckBoxMenuItem(LocalisationHelper.getString("main_frame_menuitem_gc_times_rectangles")`true);" is 157.,91
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiBuilder,initMenuBar,Long Statement,The length of the statement "menuItemGcTimesRectangle.setMnemonic(LocalisationHelper.getString("main_frame_menuitem_mnemonic_gc_times_rectangles").charAt(0));" is 129.,91
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiBuilder,initMenuBar,Long Statement,The length of the statement "StayOpenCheckBoxMenuItem menuItemTotalMemory=new StayOpenCheckBoxMenuItem(LocalisationHelper.getString("main_frame_menuitem_total_memory")`true);" is 145.,91
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiBuilder,initMenuBar,Long Statement,The length of the statement "StayOpenCheckBoxMenuItem menuItemTenuredMemory=new StayOpenCheckBoxMenuItem(LocalisationHelper.getString("main_frame_menuitem_tenured_memory")`true);" is 149.,91
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiBuilder,initMenuBar,Long Statement,The length of the statement "menuItemTenuredMemory.setMnemonic(LocalisationHelper.getString("main_frame_menuitem_mnemonic_tenured_memory").charAt(0));" is 121.,91
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiBuilder,initMenuBar,Long Statement,The length of the statement "StayOpenCheckBoxMenuItem menuItemYoungMemory=new StayOpenCheckBoxMenuItem(LocalisationHelper.getString("main_frame_menuitem_young_memory")`true);" is 145.,91
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiBuilder,initMenuBar,Long Statement,The length of the statement "StayOpenCheckBoxMenuItem menuItemUsedMemory=new StayOpenCheckBoxMenuItem(LocalisationHelper.getString("main_frame_menuitem_used_memory")`true);" is 143.,91
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiBuilder,initMenuBar,Long Statement,The length of the statement "StayOpenCheckBoxMenuItem menuItemUsedTenuredMemory=new StayOpenCheckBoxMenuItem(LocalisationHelper.getString("main_frame_menuitem_used_tenured_memory")`true);" is 158.,91
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiBuilder,initMenuBar,Long Statement,The length of the statement "menuItemUsedTenuredMemory.setMnemonic(LocalisationHelper.getString("main_frame_menuitem_mnemonic_used_tenured_memory").charAt(0));" is 130.,91
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiBuilder,initMenuBar,Long Statement,The length of the statement "StayOpenCheckBoxMenuItem menuItemUsedYoungMemory=new StayOpenCheckBoxMenuItem(LocalisationHelper.getString("main_frame_menuitem_used_young_memory")`true);" is 154.,91
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiBuilder,initMenuBar,Long Statement,The length of the statement "menuItemUsedYoungMemory.setMnemonic(LocalisationHelper.getString("main_frame_menuitem_mnemonic_used_young_memory").charAt(0));" is 126.,91
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiBuilder,initMenuBar,Long Statement,The length of the statement "StayOpenCheckBoxMenuItem menuItemInitialMarkLevel=new StayOpenCheckBoxMenuItem(LocalisationHelper.getString("main_frame_menuitem_initial_mark_level")`true);" is 156.,91
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiBuilder,initMenuBar,Long Statement,The length of the statement "menuItemInitialMarkLevel.setMnemonic(LocalisationHelper.getString("main_frame_menuitem_mnemonic_initial_mark_level").charAt(0));" is 128.,91
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiBuilder,initMenuBar,Long Statement,The length of the statement "menuItemInitialMarkLevel.setIcon(ImageHelper.createMonoColoredImageIcon(InitialMarkLevelRenderer.DEFAULT_LINEPAINT`20`20));" is 123.,91
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiBuilder,initMenuBar,Long Statement,The length of the statement "StayOpenCheckBoxMenuItem menuItemConcurrentGcBeginEnd=new StayOpenCheckBoxMenuItem(LocalisationHelper.getString("main_frame_menuitem_concurrent_collection_begin_end")`true);" is 173.,91
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiBuilder,initMenuBar,Long Statement,The length of the statement "menuItemConcurrentGcBeginEnd.setMnemonic(LocalisationHelper.getString("main_frame_menuitem_mnemonic_concurrent_collection_begin_end").charAt(0));" is 145.,91
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiBuilder,initMenuBar,Long Statement,The length of the statement "menuItemConcurrentGcBeginEnd.setToolTipText(LocalisationHelper.getString("main_frame_menuitem_hint_concurrent_collection_begin_end"));" is 134.,91
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiBuilder,initMenuBar,Long Statement,The length of the statement "menuItemConcurrentGcBeginEnd.setIcon(ImageHelper.createMonoColoredImageIcon(ConcurrentGcBegionEndRenderer.CONCURRENT_COLLECTION_BEGIN`20`20));" is 142.,91
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiBuilder,initMenuBar,Magic Number,The method contains a magic number: 20,91
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiBuilder,initMenuBar,Magic Number,The method contains a magic number: 20,91
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiBuilder,initMenuBar,Magic Number,The method contains a magic number: 20,91
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiBuilder,initMenuBar,Magic Number,The method contains a magic number: 20,91
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiBuilder,initMenuBar,Magic Number,The method contains a magic number: 20,91
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiBuilder,initMenuBar,Magic Number,The method contains a magic number: 20,91
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiBuilder,initMenuBar,Magic Number,The method contains a magic number: 20,91
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiBuilder,initMenuBar,Magic Number,The method contains a magic number: 20,91
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiBuilder,initMenuBar,Magic Number,The method contains a magic number: 20,91
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiBuilder,initMenuBar,Magic Number,The method contains a magic number: 20,91
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiBuilder,initMenuBar,Magic Number,The method contains a magic number: 20,91
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiBuilder,initMenuBar,Magic Number,The method contains a magic number: 20,91
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiBuilder,initMenuBar,Magic Number,The method contains a magic number: 20,91
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiBuilder,initMenuBar,Magic Number,The method contains a magic number: 20,91
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiBuilder,initMenuBar,Magic Number,The method contains a magic number: 20,91
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiBuilder,initMenuBar,Magic Number,The method contains a magic number: 20,91
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiBuilder,initMenuBar,Magic Number,The method contains a magic number: 20,91
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiBuilder,initMenuBar,Magic Number,The method contains a magic number: 20,91
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiBuilder,initMenuBar,Magic Number,The method contains a magic number: 20,91
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiBuilder,initMenuBar,Magic Number,The method contains a magic number: 20,91
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiBuilder,initMenuBar,Magic Number,The method contains a magic number: 20,91
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiBuilder,initMenuBar,Magic Number,The method contains a magic number: 20,91
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiBuilder,initMenuBar,Magic Number,The method contains a magic number: 20,91
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiBuilder,initMenuBar,Magic Number,The method contains a magic number: 20,91
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiBuilder,initMenuBar,Magic Number,The method contains a magic number: 20,91
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiBuilder,initMenuBar,Magic Number,The method contains a magic number: 20,91
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiBuilder,initMenuBar,Magic Number,The method contains a magic number: 20,91
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiBuilder,initMenuBar,Magic Number,The method contains a magic number: 20,91
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiBuilder,initMenuBar,Magic Number,The method contains a magic number: 20,91
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiBuilder,initMenuBar,Magic Number,The method contains a magic number: 20,91
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiBuilder,initMenuBar,Magic Number,The method contains a magic number: 20,91
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiBuilder,initMenuBar,Magic Number,The method contains a magic number: 20,91
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiBuilder,initToolBar,Long Statement,The length of the statement "JComboBox<String> zoomComboBox=new JComboBox<String>(new String[]{"1%"`"5%"`"10%"`"50%"`"100%"`"200%"`"300%"`"500%"`"1000%"`"5000%"});" is 134.,259
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.impl,GCViewerGuiBuilder,initToolBar,Magic Number,The method contains a magic number: 2,259
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.action,Zoom,actionPerformed,Empty catch clause,The method has an empty catch block.,32
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.action,Zoom,actionPerformed,Magic Number,The method contains a magic number: 1000.0,32
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.action,OpenSeries,OpenSeries,Long Statement,The length of the statement "putValue(MNEMONIC_KEY`Integer.valueOf(LocalisationHelper.getString("main_frame_menuitem_mnemonic_open_series").charAt(0)));" is 123.,32
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.action,OpenSeries,getResources,Long Statement,The length of the statement "if (selectedFiles == null || selectedFiles.length == 0) throw new IllegalArgumentException("At least one file must be selected!");" is 130.,56
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.action,OSXFullScreen,OSXFullScreen,Long Statement,The length of the statement "putValue(ACCELERATOR_KEY`KeyStroke.getKeyStroke('F'`Toolkit.getDefaultToolkit().getMenuShortcutKeyMask() | Event.SHIFT_MASK));" is 126.,30
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.action,OSXFullScreen,OSXFullScreen,Long Statement,The length of the statement "Object proxy=Proxy.newProxyInstance(OSXFullScreen.class.getClassLoader()`new Class[]{listenerClass}`new InvocationHandler(){" is 124.,30
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.action,OSXFullScreen,OSXFullScreen,Long Statement,The length of the statement "gcViewer.getDesktopPane().getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE`0)`"leaveFullScreen");" is 141.,30
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.action,OSXFullScreen,OSXFullScreen,Long Statement,The length of the statement "gcViewer.getDesktopPane().getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).remove(KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE`0));" is 126.,30
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.action,OSXFullScreen,invoke,Long Statement,The length of the statement "gcViewer.getDesktopPane().getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE`0)`"leaveFullScreen");" is 141.,44
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.action,OSXFullScreen,invoke,Long Statement,The length of the statement "gcViewer.getDesktopPane().getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).remove(KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE`0));" is 126.,44
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.action,Export,actionPerformed,Long Statement,The length of the statement "exportFile(chartPanelView.getGCResource().getModel()`saveDialog.getSelectedFile()`fileFilter.getExtension()`fileFilter.getDataWriterType());" is 140.,54
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.action,Export,actionPerformed,Long Statement,The length of the statement "JOptionPane.showMessageDialog(gcViewer`LocalisationHelper.getString("fileexport_dialog_error_occured")`LocalisationHelper.getString("fileexport_dialog_write_file_failed")`JOptionPane.ERROR_MESSAGE);" is 198.,54
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.action,Export,exportFile,Long Statement,The length of the statement "if (!file.exists() || JOptionPane.YES_OPTION == JOptionPane.showConfirmDialog(gcViewer`LocalisationHelper.getString("fileexport_dialog_confirm_overwrite")`LocalisationHelper.getString("fileexport_dialog_title")`JOptionPane.YES_NO_OPTION)) {" is 240.,80
+gcviewer,com.tagtraum.perf.gcviewer.ctrl.action,Export,exportFile,Long Statement,The length of the statement "JOptionPane.showMessageDialog(gcViewer`ioe.getLocalizedMessage()`LocalisationHelper.getString("fileexport_dialog_write_file_failed")`JOptionPane.ERROR_MESSAGE);" is 160.,80
+gcviewer,com.tagtraum.perf.gcviewer.math,DoubleData,hashCode,Magic Number,The method contains a magic number: 31,110
+gcviewer,com.tagtraum.perf.gcviewer.math,DoubleData,hashCode,Magic Number,The method contains a magic number: 32,110
+gcviewer,com.tagtraum.perf.gcviewer.math,DoubleData,hashCode,Magic Number,The method contains a magic number: 31,110
+gcviewer,com.tagtraum.perf.gcviewer.math,DoubleData,hashCode,Magic Number,The method contains a magic number: 32,110
+gcviewer,com.tagtraum.perf.gcviewer.math,DoubleData,hashCode,Magic Number,The method contains a magic number: 31,110
+gcviewer,com.tagtraum.perf.gcviewer.math,DoubleData,hashCode,Magic Number,The method contains a magic number: 32,110
+gcviewer,com.tagtraum.perf.gcviewer.math,DoubleData,hashCode,Magic Number,The method contains a magic number: 31,110
+gcviewer,com.tagtraum.perf.gcviewer.math,DoubleData,hashCode,Magic Number,The method contains a magic number: 32,110
+gcviewer,com.tagtraum.perf.gcviewer.math,RegressionLine,slope,Long Parameter List,The method has 5 parameters. ,61
+gcviewer,com.tagtraum.perf.gcviewer.math,RegressionLine,hashCode,Magic Number,The method contains a magic number: 32,86
+gcviewer,com.tagtraum.perf.gcviewer.math,RegressionLine,hashCode,Magic Number,The method contains a magic number: 31,86
+gcviewer,com.tagtraum.perf.gcviewer.math,RegressionLine,hashCode,Magic Number,The method contains a magic number: 32,86
+gcviewer,com.tagtraum.perf.gcviewer.math,RegressionLine,hashCode,Magic Number,The method contains a magic number: 31,86
+gcviewer,com.tagtraum.perf.gcviewer.math,RegressionLine,hashCode,Magic Number,The method contains a magic number: 32,86
+gcviewer,com.tagtraum.perf.gcviewer.math,RegressionLine,hashCode,Magic Number,The method contains a magic number: 31,86
+gcviewer,com.tagtraum.perf.gcviewer.math,RegressionLine,hashCode,Magic Number,The method contains a magic number: 32,86
+gcviewer,com.tagtraum.perf.gcviewer.math,RegressionLine,hashCode,Magic Number,The method contains a magic number: 31,86
+gcviewer,com.tagtraum.perf.gcviewer.math,DoubleDataPercentile,getPercentile,Magic Number,The method contains a magic number: 10,21
+gcviewer,com.tagtraum.perf.gcviewer.math,DoubleDataPercentile,getPercentile,Magic Number,The method contains a magic number: 10,21
+gcviewer,com.tagtraum.perf.gcviewer.math,DoubleDataPercentile,getPercentile,Magic Number,The method contains a magic number: 100,21
+gcviewer,com.tagtraum.perf.gcviewer.math,DoubleDataPercentile,getPercentile,Magic Number,The method contains a magic number: 100,21
+gcviewer,com.tagtraum.perf.gcviewer.math,DoubleDataPercentile,getPercentile,Magic Number,The method contains a magic number: 100,21
+gcviewer,com.tagtraum.perf.gcviewer.math,DoubleDataPercentile,getPercentile,Magic Number,The method contains a magic number: 2,21
+gcviewer,com.tagtraum.perf.gcviewer.math,IntData,hashCode,Magic Number,The method contains a magic number: 31,108
+gcviewer,com.tagtraum.perf.gcviewer.math,IntData,hashCode,Magic Number,The method contains a magic number: 32,108
+gcviewer,com.tagtraum.perf.gcviewer.math,IntData,hashCode,Magic Number,The method contains a magic number: 31,108
+gcviewer,com.tagtraum.perf.gcviewer.math,IntData,hashCode,Magic Number,The method contains a magic number: 32,108
+gcviewer,com.tagtraum.perf.gcviewer.math,IntData,hashCode,Magic Number,The method contains a magic number: 31,108
+gcviewer,com.tagtraum.perf.gcviewer.math,IntData,hashCode,Magic Number,The method contains a magic number: 31,108
+gcviewer,com.tagtraum.perf.gcviewer.model,ConcurrentGCEvent,hashCode,Magic Number,The method contains a magic number: 31,86
+gcviewer,com.tagtraum.perf.gcviewer.model,ConcurrentGCEvent,hashCode,Magic Number,The method contains a magic number: 32,86
+gcviewer,com.tagtraum.perf.gcviewer.model,GCModel,GCModel,Long Identifier,The length of the field postConcurrentCycleUsedTenuredSizes is 35.,187
+gcviewer,com.tagtraum.perf.gcviewer.model,GCModel,GCModel,Long Identifier,The length of the field postConcurrentCycleUsedHeapSizes is 32.,187
+gcviewer,com.tagtraum.perf.gcviewer.model,GCModel,printPauseMap,Long Statement,The length of the statement "System.out.println(entry.getKey() + " [n` avg` sum` min` max` 50th` 75th` 95th` 99th]:\t" + entry.getValue().getN()+ "\t"+ entry.getValue().average()+ "\t"+ entry.getValue().getSum()+ "\t"+ entry.getValue().getMin()+ "\t"+ entry.getValue().getMax()+ "\t"+ ((DoubleDataPercentile)entry.getValue()).getPercentile(50)+ "\t"+ ((DoubleDataPercentile)entry.getValue()).getPercentile(75)+ "\t"+ ((DoubleDataPercentile)entry.getValue()).getPercentile(95)+ "\t"+ ((DoubleDataPercentile)entry.getValue()).getPercentile(99));" is 514.,249
+gcviewer,com.tagtraum.perf.gcviewer.model,GCModel,printPauseMap,Magic Number,The method contains a magic number: 50,249
+gcviewer,com.tagtraum.perf.gcviewer.model,GCModel,printPauseMap,Magic Number,The method contains a magic number: 75,249
+gcviewer,com.tagtraum.perf.gcviewer.model,GCModel,printPauseMap,Magic Number,The method contains a magic number: 95,249
+gcviewer,com.tagtraum.perf.gcviewer.model,GCModel,printPauseMap,Magic Number,The method contains a magic number: 99,249
+gcviewer,com.tagtraum.perf.gcviewer.model,GCModel,printIntData,Long Statement,The length of the statement "System.out.println(name + " (n` avg` stddev` min` max):\t" + data.getN()+ "\t"+ data.average()+ "\t"+ data.standardDeviation()+ "\t"+ data.getMin()+ "\t"+ data.getMax());" is 170.,255
+gcviewer,com.tagtraum.perf.gcviewer.model,GCModel,printDoubleData,Long Statement,The length of the statement "System.out.println(name + " (n` avg` stddev` min` max):\t" + data.getN()+ "\t"+ data.average()+ "\t"+ data.standardDeviation()+ "\t"+ data.getMin()+ "\t"+ data.getMax());" is 170.,263
+gcviewer,com.tagtraum.perf.gcviewer.model,GCModel,add,Complex Conditional,The conditional expression size() == 1 || (size() > 1 && abstractEvent.getTimestamp() > 0.0) is complex.,412
+gcviewer,com.tagtraum.perf.gcviewer.model,GCModel,addConcurrentGcEvent,Magic Number,The method contains a magic number: 0.0000001,450
+gcviewer,com.tagtraum.perf.gcviewer.model,GCModel,addGcEvent,Complex Conditional,The conditional expression size() > 1 && allEvents.get(allEvents.size() - 2).isConcurrentCollectionEnd() && !allEvents.get(allEvents.size() - 2).hasMemoryInformation() is complex.,467
+gcviewer,com.tagtraum.perf.gcviewer.model,GCModel,addGcEvent,Long Statement,The length of the statement "if (size() > 1 && allEvents.get(allEvents.size() - 2).isConcurrentCollectionEnd() && !allEvents.get(allEvents.size() - 2).hasMemoryInformation()) {" is 147.,467
+gcviewer,com.tagtraum.perf.gcviewer.model,GCModel,addGcEvent,Magic Number,The method contains a magic number: 2,467
+gcviewer,com.tagtraum.perf.gcviewer.model,GCModel,addGcEvent,Magic Number,The method contains a magic number: 2,467
+gcviewer,com.tagtraum.perf.gcviewer.model,GCModel,addVmOperationEvent,Magic Number,The method contains a magic number: 0.000001,549
+gcviewer,com.tagtraum.perf.gcviewer.model,GCModel,makeSureHasTimeStamp,Complex Conditional,The conditional expression size() >= 1 && abstractEvent.getTimestamp() < 0.000001 && abstractEvent.getDatestamp() != null is complex.,560
+gcviewer,com.tagtraum.perf.gcviewer.model,GCModel,makeSureHasTimeStamp,Magic Number,The method contains a magic number: 0.000001,560
+gcviewer,com.tagtraum.perf.gcviewer.model,GCModel,makeSureHasTimeStamp,Magic Number,The method contains a magic number: 1000.0,560
+gcviewer,com.tagtraum.perf.gcviewer.model,GCModel,updatePostConcurrentCycleUsedSizes,Long Identifier,The length of the field postConcurrentCycleUsedTenuredSizes is 35.,567
+gcviewer,com.tagtraum.perf.gcviewer.model,GCModel,updatePostConcurrentCycleUsedSizes,Long Identifier,The length of the field postConcurrentCycleUsedHeapSizes is 32.,567
+gcviewer,com.tagtraum.perf.gcviewer.model,GCModel,updatePostConcurrentCycleUsedSizes,Long Identifier,The length of the field postConcurrentCycleUsedTenuredSizes is 35.,572
+gcviewer,com.tagtraum.perf.gcviewer.model,GCModel,updatePostConcurrentCycleUsedSizes,Long Identifier,The length of the field postConcurrentCycleUsedHeapSizes is 32.,572
+gcviewer,com.tagtraum.perf.gcviewer.model,GCModel,adjustPause,Magic Number,The method contains a magic number: 2,586
+gcviewer,com.tagtraum.perf.gcviewer.model,GCModel,adjustTimeStamp,Long Statement,The length of the statement "Duration adjustment=Duration.ofMinutes((long)Math.rint(previousEvent.getPause() / 60)).plus((long)Math.rint(previousEvent.getPause())`ChronoUnit.SECONDS).plus((long)Math.rint(previousEvent.getPause() * 1000)`ChronoUnit.MILLIS);" is 227.,611
+gcviewer,com.tagtraum.perf.gcviewer.model,GCModel,adjustTimeStamp,Magic Number,The method contains a magic number: 60,611
+gcviewer,com.tagtraum.perf.gcviewer.model,GCModel,adjustTimeStamp,Magic Number,The method contains a magic number: 1000,611
+gcviewer,com.tagtraum.perf.gcviewer.model,GCModel,setTimeStamp,Long Statement,The length of the statement "AbstractGCEvent<?> previousEvent=stopTheWorldEvents.size() > 1 ? stopTheWorldEvents.get(stopTheWorldEvents.size() - 2) : null;" is 126.,631
+gcviewer,com.tagtraum.perf.gcviewer.model,GCModel,setTimeStamp,Magic Number,The method contains a magic number: 2,631
+gcviewer,com.tagtraum.perf.gcviewer.model,GCModel,updatePromotion,Complex Conditional,The conditional expression event.getGeneration().equals(Generation.YOUNG) && event.hasDetails() && !event.isFull() is complex.,641
+gcviewer,com.tagtraum.perf.gcviewer.model,GCModel,getThroughput,Magic Number,The method contains a magic number: 100,901
+gcviewer,com.tagtraum.perf.gcviewer.model,GCModel,getPostConcurrentCycleTenuredUsedSizes,Long Identifier,The length of the field postConcurrentCycleUsedTenuredSizes is 35.,967
+gcviewer,com.tagtraum.perf.gcviewer.model,GCModel,getPostConcurrentCycleHeapUsedSizes,Long Identifier,The length of the field postConcurrentCycleUsedHeapSizes is 32.,975
+gcviewer,com.tagtraum.perf.gcviewer.model,GCModel,getRunningTime,Long Statement,The length of the statement "return lastPauseTimeStamp - firstPauseTimeStamp + (stopTheWorldEvents.size() > 0 ? stopTheWorldEvents.get(stopTheWorldEvents.size() - 1).getPause() : 0);" is 153.,997
+gcviewer,com.tagtraum.perf.gcviewer.model,GCModel,hasCorrectTimestamp,Long Statement,The length of the statement "return format == Format.IBM_VERBOSE_GC || format == Format.SUN_X_LOG_GC || format == Format.SUN_1_2_2VERBOSE_GC || format == Format.UNIFIED_JVM_LOGGING;" is 152.,1036
+gcviewer,com.tagtraum.perf.gcviewer.model,GCModel,getStartDate,Long Statement,The length of the statement "ZonedDateTime suggestedStartDate=ZonedDateTime.ofInstant(Instant.ofEpochMilli(getLastModified())`ZoneId.systemDefault());" is 121.,1059
+gcviewer,com.tagtraum.perf.gcviewer.model,GCModel,getStartDate,Magic Number,The method contains a magic number: 1000d,1059
+gcviewer,com.tagtraum.perf.gcviewer.model,GCModel,hashCode,Long Identifier,The length of the field postConcurrentCycleUsedTenuredSizes is 35.,1092
+gcviewer,com.tagtraum.perf.gcviewer.model,GCModel,hashCode,Long Identifier,The length of the field postConcurrentCycleUsedHeapSizes is 32.,1092
+gcviewer,com.tagtraum.perf.gcviewer.model,GCModel,hashCode,Long Statement,The length of the statement "return Objects.hash(allEvents`fileInformation`fullGcEventPauses`gcEventPauses`gcEventPhases`concurrentGcEventPauses`vmOperationEventPauses`heapAllocatedSizes`tenuredAllocatedSizes`youngAllocatedSizes`permAllocatedSizes`heapUsedSizes`tenuredUsedSizes`youngUsedSizes`permUsedSizes`postConcurrentCycleUsedTenuredSizes`postConcurrentCycleUsedHeapSizes`promotion`firstPauseTimeStamp`lastPauseTimeStamp`totalPause`fullGCPause`lastFullGcPauseTimeStamp`fullGcPauseInterval`gcPause`vmOperationPause`lastGcPauseTimeStamp`pauseInterval`initiatingOccupancyFraction`freedMemory`format`postGCUsedMemory`postFullGCUsedHeap`freedMemoryByGC`freedMemoryByFullGC`postGCSlope`currentPostGCSlope`currentRelativePostGCIncrease`relativePostGCIncrease`postFullGCSlope`relativePostFullGCIncrease`url);" is 776.,1092
+gcviewer,com.tagtraum.perf.gcviewer.model,GCEvent,GCEvent,Long Parameter List,The method has 6 parameters. ,27
+gcviewer,com.tagtraum.perf.gcviewer.model,GCEvent,clone,Magic Number,The method contains a magic number: 2,62
+gcviewer,com.tagtraum.perf.gcviewer.model,GCEvent,equals,Long Statement,The length of the statement "return getPreUsed() == gcEvent.getPreUsed() && getPostUsed() == gcEvent.getPostUsed() && getTotal() == gcEvent.getTotal();" is 122.,171
+gcviewer,com.tagtraum.perf.gcviewer.model,AbstractGCEvent,add,Magic Number,The method contains a magic number: 2,46
+gcviewer,com.tagtraum.perf.gcviewer.model,AbstractGCEvent,cloneAndMerge,Long Statement,The length of the statement "clonedEvent.setExtendedType(new ExtendedType(getExtendedType().getType()`getExtendedType().fullName + "+" + clonedEvent.getExtendedType().fullName));" is 149.,103
+gcviewer,com.tagtraum.perf.gcviewer.model,AbstractGCEvent,toString,Magic Number,The method contains a magic number: 128,249
+gcviewer,com.tagtraum.perf.gcviewer.model,AbstractGCEvent,isConcurrentCollectionStart,Long Statement,The length of the statement "return getExtendedType().getName().equals(Type.CMS_CONCURRENT_MARK_START.getName()) || getExtendedType().getName().equals(Type.ASCMS_CONCURRENT_MARK_START.getName()) || (getExtendedType().getName().equals(Type.UJL_CMS_CONCURRENT_MARK.getName()) && getPause() > 0.000001)|| getExtendedType().getName().equals(Type.G1_CONCURRENT_MARK_START.getName())|| (getExtendedType().getName().equals(Type.UJL_G1_CONCURRENT_CYCLE.getName()) && getPause() < 0.00001)|| (getExtendedType().getName().equals(Type.UJL_G1_CONCURRENT_MARK_CYCLE.getName()) && getPause() < 0.00001)|| getExtendedType().getName().equals(Type.UJL_SHEN_CONCURRENT_RESET.getName());" is 639.,290
+gcviewer,com.tagtraum.perf.gcviewer.model,AbstractGCEvent,isConcurrentCollectionStart,Magic Number,The method contains a magic number: 0.000001,290
+gcviewer,com.tagtraum.perf.gcviewer.model,AbstractGCEvent,isConcurrentCollectionStart,Magic Number,The method contains a magic number: 0.00001,290
+gcviewer,com.tagtraum.perf.gcviewer.model,AbstractGCEvent,isConcurrentCollectionStart,Magic Number,The method contains a magic number: 0.00001,290
+gcviewer,com.tagtraum.perf.gcviewer.model,AbstractGCEvent,isConcurrentCollectionEnd,Long Statement,The length of the statement "return getExtendedType().getName().equals(Type.CMS_CONCURRENT_RESET.getName()) || getExtendedType().getName().equals(Type.ASCMS_CONCURRENT_RESET.getName()) || (getExtendedType().getName().equals(Type.UJL_CMS_CONCURRENT_RESET.getName()) && getPause() > 0.0000001)|| getExtendedType().getName().equals(Type.G1_CONCURRENT_CLEANUP_END.getName())|| (getExtendedType().getName().equals(Type.UJL_G1_CONCURRENT_CYCLE.getName()) && getPause() > 0.0000001)|| (getExtendedType().getName().equals(Type.UJL_G1_CONCURRENT_MARK_CYCLE.getName()) && getPause() > 0.0000001)|| getExtendedType().getName().equals(Type.UJL_SHEN_CONCURRENT_CLEANUP.getName());" is 638.,300
+gcviewer,com.tagtraum.perf.gcviewer.model,AbstractGCEvent,isConcurrentCollectionEnd,Magic Number,The method contains a magic number: 0.0000001,300
+gcviewer,com.tagtraum.perf.gcviewer.model,AbstractGCEvent,isConcurrentCollectionEnd,Magic Number,The method contains a magic number: 0.0000001,300
+gcviewer,com.tagtraum.perf.gcviewer.model,AbstractGCEvent,isConcurrentCollectionEnd,Magic Number,The method contains a magic number: 0.0000001,300
+gcviewer,com.tagtraum.perf.gcviewer.model,AbstractGCEvent,isInitialMark,Long Statement,The length of the statement "return getTypeAsString().indexOf("initial-mark") >= 0 || getTypeAsString().indexOf("Initial Mark") >= 0 || getTypeAsString().indexOf("Init Mark") >= 0;" is 151.,310
+gcviewer,com.tagtraum.perf.gcviewer.model,AbstractGCEvent,isRemark,Long Statement,The length of the statement "return getTypeAsString().indexOf(Type.CMS_REMARK.getName()) >= 0 || getTypeAsString().indexOf(Type.ASCMS_REMARK.getName()) >= 0 || getTypeAsString().indexOf(Type.G1_REMARK.getName()) >= 0 || getTypeAsString().indexOf(Type.UJL_PAUSE_REMARK.getName()) >= 0 || getTypeAsString().indexOf(Type.UJL_SHEN_PAUSE_FINAL_MARK.getName()) >= 0;" is 331.,316
+gcviewer,com.tagtraum.perf.gcviewer.model,AbstractGCEvent,hasPause,Long Statement,The length of the statement "return getExtendedType().getPattern().equals(GcPattern.GC_MEMORY_PAUSE) || getExtendedType().getPattern().equals(GcPattern.GC_PAUSE) || getExtendedType().getPattern().equals(GcPattern.GC_PAUSE_DURATION);" is 203.,324
+gcviewer,com.tagtraum.perf.gcviewer.model,AbstractGCEvent,equals,Long Statement,The length of the statement "return Double.compare(that.timestamp`timestamp) == 0 && Double.compare(that.pause`pause) == 0 && Objects.equals(datestamp`that.datestamp) && Objects.equals(extendedType`that.extendedType) && Objects.equals(typeAsString`that.typeAsString) && generation == that.generation && Objects.equals(details`that.details);" is 311.,338
+gcviewer,com.tagtraum.perf.gcviewer.model,GcResourceFile,hashCode,Magic Number,The method contains a magic number: 31,89
+gcviewer,com.tagtraum.perf.gcviewer.model,GcResourceFile,toString,Long Statement,The length of the statement "return "GCResourceFile [resourceNameAsUrlString=" + getResourceNameAsUrlString() + "` isReload="+ isReload()+ "` logger="+ getLogger()+ "` model="+ getModel()+ "]";" is 164.,98
+gcviewer,com.tagtraum.perf.gcviewer.model,GcResourceSeries,GcResourceSeries,Long Statement,The length of the statement "super(buildName(resourcesInOrder)`Logger.getLogger("GCResourceSeries".concat(Integer.toString(COUNT.incrementAndGet()))));" is 122.,19
+gcviewer,com.tagtraum.perf.gcviewer.model,GcResourceSeries,toString,Long Statement,The length of the statement "return "GCResourceSeries [resourceName=" + getResourceName() + "` isReload="+ isReload()+ "` logger="+ getLogger()+ "` model="+ getModel()+ "]";" is 144.,75
+gcviewer,com.tagtraum.perf.gcviewer.model,GcResourceSeries,buildName,Long Statement,The length of the statement "if (resourcesInOrder == null || resourcesInOrder.isEmpty()) throw new IllegalArgumentException("At least one GCResource expected!");" is 132.,80
+gcviewer,com.tagtraum.perf.gcviewer.view.renderer,PolygonChartRenderer,initClippedPolygon,Complex Conditional,The conditional expression polygon.npoints > 1000 && (xMin > polygon.xpoints[0] || xMax < polygon.xpoints[polygon.npoints - 1]) is complex.,77
+gcviewer,com.tagtraum.perf.gcviewer.view.renderer,PolygonChartRenderer,initClippedPolygon,Magic Number,The method contains a magic number: 1000,77
+gcviewer,com.tagtraum.perf.gcviewer.view.renderer,PolygonChartRenderer,initClippedPolygon,Magic Number,The method contains a magic number: 2,77
+gcviewer,com.tagtraum.perf.gcviewer.view.renderer,PolygonChartRenderer,initClippedPolygon,Magic Number,The method contains a magic number: 2,77
+gcviewer,com.tagtraum.perf.gcviewer.view.renderer,PolygonChartRenderer,initClippedPolygon,Magic Number,The method contains a magic number: 2,77
+gcviewer,com.tagtraum.perf.gcviewer.view.renderer,PolygonChartRenderer,findInsertionBoundary,Magic Number,The method contains a magic number: 2,136
+gcviewer,com.tagtraum.perf.gcviewer.view.renderer,PolygonChartRenderer,createMemoryScaledPolygon,Long Statement,The length of the statement "return new ScaledPolygon(getModelChart().getScaleFactor()`getHeight() / ((double)getModelChart().getFootprint())`getHeight());" is 126.,187
+gcviewer,com.tagtraum.perf.gcviewer.view.renderer,PolygonChartRenderer,hasMemoryInformation,Long Statement,The length of the statement "return event.getExtendedType().getPattern().equals(GcPattern.GC_MEMORY) || event.getExtendedType().getPattern().equals(GcPattern.GC_MEMORY_PAUSE);" is 146.,200
+gcviewer,com.tagtraum.perf.gcviewer.view.renderer,TotalYoungRenderer,computePolygon,Complex Conditional,The conditional expression hasMemoryInformation(event) && young != null && tenured != null is complex.,35
+gcviewer,com.tagtraum.perf.gcviewer.view.renderer,GCRectanglesRenderer,paintComponent,Complex Conditional,The conditional expression lastX != x || lastY != y || lastWidth != width || lastHeight != height is complex.,39
+gcviewer,com.tagtraum.perf.gcviewer.view.renderer,GCRectanglesRenderer,paintComponent,Complex Method,Cyclomatic complexity of the method is 9,39
+gcviewer,com.tagtraum.perf.gcviewer.view.renderer,GCRectanglesRenderer,paintComponent,Long Statement,The length of the statement "for (Iterator<AbstractGCEvent<?>> i=getModelChart().getModel().getStopTheWorldEvents(); i.hasNext() && lastX < rightBoundary; ) {" is 129.,39
+gcviewer,com.tagtraum.perf.gcviewer.view.renderer,GCRectanglesRenderer,paintComponent,Long Statement,The length of the statement "int x=(int)(scaleFactor * (event.getTimestamp() - getModelChart().getModel().getFirstPauseTimeStamp() - event.getPause()));" is 123.,39
+gcviewer,com.tagtraum.perf.gcviewer.view.renderer,FullGCLineRenderer,paintComponent,Complex Conditional,The conditional expression scaledTimestamp != lastScaledTimestamp && scaledTimestamp >= minX && scaledTimestamp <= maxX is complex.,29
+gcviewer,com.tagtraum.perf.gcviewer.view.renderer,FullGCLineRenderer,paintComponent,Long Statement,The length of the statement "int scaledTimestamp=(int)(scaleFactor * (event.getTimestamp() - getModelChart().getModel().getFirstPauseTimeStamp() - event.getPause()));" is 137.,29
+gcviewer,com.tagtraum.perf.gcviewer.view.renderer,ConcurrentGcBegionEndRenderer,paintComponent,Long Statement,The length of the statement "final int scaledTimestamp=(int)(scaleFactor * (event.getTimestamp() - getModelChart().getModel().getFirstPauseTimeStamp() - event.getPause()));" is 143.,29
+gcviewer,com.tagtraum.perf.gcviewer.view.renderer,ConcurrentGcBegionEndRenderer,paintComponent,Long Statement,The length of the statement "final int scaledTimestamp=(int)(scaleFactor * (event.getTimestamp() - getModelChart().getModel().getFirstPauseTimeStamp()));" is 124.,29
+gcviewer,com.tagtraum.perf.gcviewer.view.renderer,UsedYoungRenderer,computePolygon,Complex Method,Cyclomatic complexity of the method is 8,31
+gcviewer,com.tagtraum.perf.gcviewer.view,ModelMetricsPanel,ModelMetricsPanel,Magic Number,The method contains a magic number: 5,41
+gcviewer,com.tagtraum.perf.gcviewer.view,ModelMetricsPanel,ModelMetricsPanel,Magic Number,The method contains a magic number: 2,41
+gcviewer,com.tagtraum.perf.gcviewer.view,ModelMetricsPanel,ModelMetricsPanel,Magic Number,The method contains a magic number: 2,41
+gcviewer,com.tagtraum.perf.gcviewer.view,ModelMetricsPanel,isSignificant,Magic Number,The method contains a magic number: 0.75,92
+gcviewer,com.tagtraum.perf.gcviewer.view,AboutDialog,AboutDialog,Long Statement,The length of the statement "JLabel version=new JLabel("<html><font color=\"gray\">version:</font> " + BuildInfoReader.getVersion() + "</html>"`JLabel.CENTER);" is 130.,88
+gcviewer,com.tagtraum.perf.gcviewer.view,AboutDialog,AboutDialog,Long Statement,The length of the statement "JLabel buildDate=new JLabel("<html><font color=\"gray\">build date:</font> " + BuildInfoReader.getBuildDate() + "</html>"`JLabel.CENTER);" is 137.,88
+gcviewer,com.tagtraum.perf.gcviewer.view,AboutDialog,AboutDialog,Magic Number,The method contains a magic number: 10,88
+gcviewer,com.tagtraum.perf.gcviewer.view,AboutDialog,AboutDialog,Magic Number,The method contains a magic number: 10,88
+gcviewer,com.tagtraum.perf.gcviewer.view,AboutDialog,AboutDialog,Magic Number,The method contains a magic number: 10,88
+gcviewer,com.tagtraum.perf.gcviewer.view,AboutDialog,AboutDialog,Magic Number,The method contains a magic number: 10,88
+gcviewer,com.tagtraum.perf.gcviewer.view,AboutDialog,AboutDialog,Magic Number,The method contains a magic number: 10,88
+gcviewer,com.tagtraum.perf.gcviewer.view,AboutDialog,AboutDialog,Magic Number,The method contains a magic number: 2,88
+gcviewer,com.tagtraum.perf.gcviewer.view,AboutDialog,AboutDialog,Magic Number,The method contains a magic number: 3,88
+gcviewer,com.tagtraum.perf.gcviewer.view,AboutDialog,AboutDialog,Magic Number,The method contains a magic number: 4,88
+gcviewer,com.tagtraum.perf.gcviewer.view,AboutDialog,formatContributors,Magic Number,The method contains a magic number: 3,155
+gcviewer,com.tagtraum.perf.gcviewer.view,AboutDialog,calculatePreferredSize,Magic Number,The method contains a magic number: 1.1,168
+gcviewer,com.tagtraum.perf.gcviewer.view,ModelDetailsPanel,ModelDetailsPanel,Long Statement,The length of the statement "DoubleDataMapTable gcTable=new DoubleDataMapTable(LocalisationHelper.getString("data_panel_group_gc_pauses")`gcEventModel);" is 123.,45
+gcviewer,com.tagtraum.perf.gcviewer.view,ModelDetailsPanel,ModelDetailsPanel,Long Statement,The length of the statement "DoubleDataMapTable fullGcTable=new DoubleDataMapTable(LocalisationHelper.getString("data_panel_group_full_gc_pauses")`fullGcEventModel);" is 136.,45
+gcviewer,com.tagtraum.perf.gcviewer.view,ModelDetailsPanel,ModelDetailsPanel,Long Statement,The length of the statement "vmOperationTable=new DoubleDataMapTable(LocalisationHelper.getString("data_panel_vm_op_overhead")`vmOperationEventModel);" is 121.,45
+gcviewer,com.tagtraum.perf.gcviewer.view,ModelDetailsPanel,ModelDetailsPanel,Long Statement,The length of the statement "DoubleDataMapTable concurrentGcTable=new DoubleDataMapTable(LocalisationHelper.getString("data_panel_group_concurrent_gc_events")`concurrentGcEventModel);" is 154.,45
+gcviewer,com.tagtraum.perf.gcviewer.view,ModelDetailsPanel,ModelDetailsPanel,Magic Number,The method contains a magic number: 5,45
+gcviewer,com.tagtraum.perf.gcviewer.view,ModelDetailsPanel,ModelDetailsPanel,Magic Number,The method contains a magic number: 5,45
+gcviewer,com.tagtraum.perf.gcviewer.view,ModelDetailsPanel,createGridBagConstraints,Magic Number,The method contains a magic number: 3,91
+gcviewer,com.tagtraum.perf.gcviewer.view,ModelDetailsPanel,createGridBagConstraints,Magic Number,The method contains a magic number: 3,91
+gcviewer,com.tagtraum.perf.gcviewer.view,GCViewerGuiToolBar,propertyChange,Long Statement,The length of the statement "updateWithoutFiringActionEvent(getZoomComboBox()`() -> getZoomComboBox().setSelectedItem(Math.round((double)evt.getNewValue() * 1000.0) + "%"));" is 144.,41
+gcviewer,com.tagtraum.perf.gcviewer.view,GCViewerGuiToolBar,propertyChange,Magic Number,The method contains a magic number: 1000.0,41
+gcviewer,com.tagtraum.perf.gcviewer.view,GCViewerGui,addDocument,Magic Number,The method contains a magic number: 450,36
+gcviewer,com.tagtraum.perf.gcviewer.view,GCViewerGui,addDocument,Magic Number,The method contains a magic number: 300,36
+gcviewer,com.tagtraum.perf.gcviewer.view,ChartPanelView,ChartPanelView,Long Statement,The length of the statement "JScrollPane modelDetailsScrollPane=new JScrollPane(modelDetailsPanel`JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED`JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);" is 154.,45
+gcviewer,com.tagtraum.perf.gcviewer.view,ChartPanelView,ChartPanelView,Magic Number,The method contains a magic number: 10,45
+gcviewer,com.tagtraum.perf.gcviewer.view,ChartPanelView,ChartPanelView,Magic Number,The method contains a magic number: 10,45
+gcviewer,com.tagtraum.perf.gcviewer.view,ChartPanelView,updateTabDisplay,Long Statement,The length of the statement "modelChartAndDetailsPanel.setEnabledAt(i`modelHasData || modelChartAndDetailsPanel.getTitleAt(i).equals(LocalisationHelper.getString("data_panel_tab_parser")));" is 160.,156
+gcviewer,com.tagtraum.perf.gcviewer.view,TextFileViewer,addHtmlTags,Long Statement,The length of the statement "text=text.substring(0`startIndex) + "<a href='" + text.substring(startIndex`endIndex)+ "'>"+ text.substring(startIndex`endIndex)+ "</a>"+ text.substring(endIndex);" is 163.,47
+gcviewer,com.tagtraum.perf.gcviewer.view,TextFileViewer,initComponents,Long Statement,The length of the statement "JScrollPane scrollPane=new JScrollPane(textPane`JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED`JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);" is 133.,83
+gcviewer,com.tagtraum.perf.gcviewer.view,OpenFileView,OpenFileView,Magic Number,The method contains a magic number: 2,24
+gcviewer,com.tagtraum.perf.gcviewer.view,ModelChart,setShowConcurrentCollectionBeginEnd,Long Identifier,The length of the parameter showConcurrentCollectionBeginEnd is 32.,59
+gcviewer,com.tagtraum.perf.gcviewer.view,AutoCompletionComboBox,AutoCompletionComboBox,Magic Number,The method contains a magic number: 45,19
+gcviewer,com.tagtraum.perf.gcviewer.view,OpenUrlView,showDialog,Long Statement,The length of the statement "return JOptionPane.OK_OPTION == JOptionPane.showConfirmDialog(parent`panel`LocalisationHelper.getString("urlopen_dialog_title")`JOptionPane.OK_CANCEL_OPTION`JOptionPane.PLAIN_MESSAGE);" is 184.,83
+gcviewer,com.tagtraum.perf.gcviewer.view,DesktopPane,paintComponent,Long Statement,The length of the statement "g.drawImage(logoIcon.getImage()`getWidth() / 2 - logoIcon.getIconWidth() / 2`getHeight() / 2 - logoIcon.getIconHeight() / 2`logoIcon.getIconWidth()`logoIcon.getIconHeight()`logoIcon.getImageObserver());" is 202.,28
+gcviewer,com.tagtraum.perf.gcviewer.view,DesktopPane,paintComponent,Magic Number,The method contains a magic number: 2,28
+gcviewer,com.tagtraum.perf.gcviewer.view,DesktopPane,paintComponent,Magic Number,The method contains a magic number: 2,28
+gcviewer,com.tagtraum.perf.gcviewer.view,DesktopPane,paintComponent,Magic Number,The method contains a magic number: 2,28
+gcviewer,com.tagtraum.perf.gcviewer.view,DesktopPane,paintComponent,Magic Number,The method contains a magic number: 2,28
+gcviewer,com.tagtraum.perf.gcviewer.view,DesktopPane,drawVersionString,Long Statement,The length of the statement "g.drawString(versionString`getWidth() / 2 - g.getFontMetrics().stringWidth(versionString) / 2`getHeight() / 2 + logoImage.getIconHeight() / 2 + 25);" is 148.,44
+gcviewer,com.tagtraum.perf.gcviewer.view,DesktopPane,drawVersionString,Magic Number,The method contains a magic number: 12,44
+gcviewer,com.tagtraum.perf.gcviewer.view,DesktopPane,drawVersionString,Magic Number,The method contains a magic number: 2,44
+gcviewer,com.tagtraum.perf.gcviewer.view,DesktopPane,drawVersionString,Magic Number,The method contains a magic number: 2,44
+gcviewer,com.tagtraum.perf.gcviewer.view,DesktopPane,drawVersionString,Magic Number,The method contains a magic number: 2,44
+gcviewer,com.tagtraum.perf.gcviewer.view,DesktopPane,drawVersionString,Magic Number,The method contains a magic number: 2,44
+gcviewer,com.tagtraum.perf.gcviewer.view,DesktopPane,drawVersionString,Magic Number,The method contains a magic number: 25,44
+gcviewer,com.tagtraum.perf.gcviewer.view,GCViewerGuiMenuBar,getWatchMenuItem,Long Statement,The length of the statement "if (component instanceof JCheckBoxMenuItem && ((JCheckBoxMenuItem)component).getActionCommand().equals(ActionCommands.WATCH.toString())) {" is 138.,151
+gcviewer,com.tagtraum.perf.gcviewer.view,GCDocument,relayout,Complex Conditional,The conditional expression chartPanelViews.size() > 1 || (chartPanelView.isMinimized() && chartPanelViews.size() == 1) is complex.,134
+gcviewer,com.tagtraum.perf.gcviewer.view,GCDocument,relayout,Complex Method,Cyclomatic complexity of the method is 10,134
+gcviewer,com.tagtraum.perf.gcviewer.view,GCDocument,relayout,Magic Number,The method contains a magic number: 2,134
+gcviewer,com.tagtraum.perf.gcviewer.view,GCDocument,relayout,Magic Number,The method contains a magic number: 2,134
+gcviewer,com.tagtraum.perf.gcviewer.view,GCDocument,relayout,Magic Number,The method contains a magic number: 2,134
+gcviewer,com.tagtraum.perf.gcviewer.view,GCDocument,relayout,Magic Number,The method contains a magic number: 2,134
+gcviewer,com.tagtraum.perf.gcviewer.view,GCDocument,relayout,Magic Number,The method contains a magic number: 800,134
+gcviewer,com.tagtraum.perf.gcviewer.view,GCDocument,relayout,Magic Number,The method contains a magic number: 600,134
+gcviewer,com.tagtraum.perf.gcviewer.view,GCDocument,relayout,Magic Number,The method contains a magic number: 3,134
+gcviewer,com.tagtraum.perf.gcviewer.view,GCDocument,relayout,Magic Number,The method contains a magic number: 3,134
+gcviewer,com.tagtraum.perf.gcviewer.view,GCDocument,setWatched,Long Statement,The length of the statement "final JScrollBar horizontalScrollBar=((ModelChartImpl)getLastMaximizedChartPanelView().getModelChart()).getHorizontalScrollBar();" is 129.,275
+gcviewer,com.tagtraum.perf.gcviewer.view,ModelChartImpl,ModelChartImpl,Complex Conditional,The conditional expression (!OSXSupport.isOSX() && (mouseWheelEvent.getModifiersEx() & InputEvent.CTRL_DOWN_MASK) != 0) || (OSXSupport.isOSX() && (mouseWheelEvent.getModifiersEx() & InputEvent.META_DOWN_MASK) != 0) is complex.,91
+gcviewer,com.tagtraum.perf.gcviewer.view,ModelChartImpl,ModelChartImpl,Complex Method,Cyclomatic complexity of the method is 8,91
+gcviewer,com.tagtraum.perf.gcviewer.view,ModelChartImpl,ModelChartImpl,Long Method,The method has 131 lines of code.,91
+gcviewer,com.tagtraum.perf.gcviewer.view,ModelChartImpl,ModelChartImpl,Long Statement,The length of the statement "if ((!OSXSupport.isOSX() && (mouseWheelEvent.getModifiersEx() & InputEvent.CTRL_DOWN_MASK) != 0) || (OSXSupport.isOSX() && (mouseWheelEvent.getModifiersEx() & InputEvent.META_DOWN_MASK) != 0)) {" is 194.,91
+gcviewer,com.tagtraum.perf.gcviewer.view,ModelChartImpl,ModelChartImpl,Magic Number,The method contains a magic number: 100,91
+gcviewer,com.tagtraum.perf.gcviewer.view,ModelChartImpl,ModelChartImpl,Magic Number,The method contains a magic number: 100,91
+gcviewer,com.tagtraum.perf.gcviewer.view,ModelChartImpl,ModelChartImpl,Magic Number,The method contains a magic number: 2,91
+gcviewer,com.tagtraum.perf.gcviewer.view,ModelChartImpl,ModelChartImpl,Magic Number,The method contains a magic number: 2,91
+gcviewer,com.tagtraum.perf.gcviewer.view,ModelChartImpl,ModelChartImpl,Magic Number,The method contains a magic number: 50,91
+gcviewer,com.tagtraum.perf.gcviewer.view,ModelChartImpl,ModelChartImpl,Magic Number,The method contains a magic number: 2,91
+gcviewer,com.tagtraum.perf.gcviewer.view,ModelChartImpl,ModelChartImpl,Magic Number,The method contains a magic number: 2,91
+gcviewer,com.tagtraum.perf.gcviewer.view,ModelChartImpl,ModelChartImpl,Magic Number,The method contains a magic number: 1024,91
+gcviewer,com.tagtraum.perf.gcviewer.view,ModelChartImpl,ModelChartImpl,Magic Number,The method contains a magic number: 1000,91
+gcviewer,com.tagtraum.perf.gcviewer.view,ModelChartImpl,ModelChartImpl,Magic Number,The method contains a magic number: 100,91
+gcviewer,com.tagtraum.perf.gcviewer.view,ModelChartImpl,ModelChartImpl,Magic Number,The method contains a magic number: 1.2,91
+gcviewer,com.tagtraum.perf.gcviewer.view,ModelChartImpl,ModelChartImpl,Magic Number,The method contains a magic number: 0.001,91
+gcviewer,com.tagtraum.perf.gcviewer.view,ModelChartImpl,ModelChartImpl,Magic Number,The method contains a magic number: 1.2,91
+gcviewer,com.tagtraum.perf.gcviewer.view,ModelChartImpl,ModelChartImpl,Magic Number,The method contains a magic number: 0.000001,91
+gcviewer,com.tagtraum.perf.gcviewer.view,ModelChartImpl,maybePopup,Magic Number,The method contains a magic number: 1000,197
+gcviewer,com.tagtraum.perf.gcviewer.view,ModelChartImpl,setScaleFactor,Long Statement,The length of the statement "timestampRuler.setSize((int)(getViewport().getWidth() * getScaleFactor())`(int)timestampRuler.getPreferredSize().getHeight());" is 126.,273
+gcviewer,com.tagtraum.perf.gcviewer.view,ModelChartImpl,setShowConcurrentCollectionBeginEnd,Long Identifier,The length of the parameter showConcurrentCollectionBeginEnd is 32.,408
+gcviewer,com.tagtraum.perf.gcviewer.view,ModelChartImpl,setShowDateStamp,Magic Number,The method contains a magic number: 1000,413
+gcviewer,com.tagtraum.perf.gcviewer.view,ModelChartImpl,setFootprint,Magic Number,The method contains a magic number: 1024,483
+gcviewer,com.tagtraum.perf.gcviewer.view,ModelChartImpl,propertyChange,Magic Number,The method contains a magic number: 0.0001,805
+gcviewer,com.tagtraum.perf.gcviewer.view,TimeOffsetPanel,fireTimeOffsetPanelStateChanged,Long Statement,The length of the statement "firePropertyChange(PropertyChangeEventConsts.TIMEOFFSETPANEL_STATE_CHANGED`!setOffsetCheckBox.isSelected()`setOffsetCheckBox.isSelected());" is 139.,68
+gcviewer,com.tagtraum.perf.gcviewer.view,GCModelLoaderView,GCModelLoaderView,Magic Number,The method contains a magic number: 5,42
+gcviewer,com.tagtraum.perf.gcviewer.view,GCModelLoaderView,GCModelLoaderView,Magic Number,The method contains a magic number: 5,42
+gcviewer,com.tagtraum.perf.gcviewer.view,GCModelLoaderView,GCModelLoaderView,Magic Number,The method contains a magic number: 5,42
+gcviewer,com.tagtraum.perf.gcviewer.view,GCModelLoaderView,GCModelLoaderView,Magic Number,The method contains a magic number: 5,42
+gcviewer,com.tagtraum.perf.gcviewer.view,GCModelLoaderView,GCModelLoaderView,Magic Number,The method contains a magic number: 100,42
+gcviewer,com.tagtraum.perf.gcviewer.view,GCModelLoaderView,GCModelLoaderView,Magic Number,The method contains a magic number: 5,42
+gcviewer,com.tagtraum.perf.gcviewer.view,GCModelLoaderView,GCModelLoaderView,Magic Number,The method contains a magic number: 5,42
+gcviewer,com.tagtraum.perf.gcviewer.view,GCModelLoaderView,GCModelLoaderView,Magic Number,The method contains a magic number: 5,42
+gcviewer,com.tagtraum.perf.gcviewer.view,GCModelLoaderView,GCModelLoaderView,Magic Number,The method contains a magic number: 5,42
+gcviewer,com.tagtraum.perf.gcviewer.view,GCModelLoaderView,GCModelLoaderView,Magic Number,The method contains a magic number: 5,42
+gcviewer,com.tagtraum.perf.gcviewer.view,GCModelLoaderView,GCModelLoaderView,Magic Number,The method contains a magic number: 5,42
+gcviewer,com.tagtraum.perf.gcviewer.view,GCModelLoaderView,GCModelLoaderView,Magic Number,The method contains a magic number: 5,42
+gcviewer,com.tagtraum.perf.gcviewer.view,GCModelLoaderView,GCModelLoaderView,Magic Number,The method contains a magic number: 5,42
+gcviewer,com.tagtraum.perf.gcviewer.view,GCModelLoaderView,GCModelLoaderView,Magic Number,The method contains a magic number: 5,42
+gcviewer,com.tagtraum.perf.gcviewer.view,GCModelLoaderView,GCModelLoaderView,Magic Number,The method contains a magic number: 5,42
+gcviewer,com.tagtraum.perf.gcviewer.view,GCModelLoaderView,GCModelLoaderView,Magic Number,The method contains a magic number: 5,42
+gcviewer,com.tagtraum.perf.gcviewer.view,GCModelLoaderView,GCModelLoaderView,Magic Number,The method contains a magic number: 5,42
+gcviewer,com.tagtraum.perf.gcviewer.view,GCModelLoaderView,GCModelLoaderView,Magic Number,The method contains a magic number: 700,42
+gcviewer,com.tagtraum.perf.gcviewer.view,GCModelLoaderView,GCModelLoaderView,Magic Number,The method contains a magic number: 500,42
+gcviewer,com.tagtraum.perf.gcviewer.view,GCModelLoaderView,propertyChange,Magic Number,The method contains a magic number: 100,93
+gcviewer,com.tagtraum.perf.gcviewer.view,ScreenCenteredDialog,getPreferredSize,Magic Number,The method contains a magic number: 50,46
+gcviewer,com.tagtraum.perf.gcviewer.view,ScreenCenteredDialog,setVisible,Magic Number,The method contains a magic number: 2,73
+gcviewer,com.tagtraum.perf.gcviewer.view,ScreenCenteredDialog,setVisible,Magic Number,The method contains a magic number: 2,73
+gcviewer,com.tagtraum.perf.gcviewer.view,ScreenCenteredDialog,setVisible,Magic Number,The method contains a magic number: 2,73
+gcviewer,com.tagtraum.perf.gcviewer.view,ScreenCenteredDialog,setVisible,Magic Number,The method contains a magic number: 2,73
+gcviewer,com.tagtraum.perf.gcviewer.view.util,OSXAdapter,setAboutHandler,Long Statement,The length of the statement "Method enableAboutMethod=macOSXApplication.getClass().getDeclaredMethod("setEnabledAboutMenu"`new Class[]{boolean.class});" is 122.,88
+gcviewer,com.tagtraum.perf.gcviewer.view.util,OSXAdapter,setPreferencesHandler,Long Statement,The length of the statement "Method enablePrefsMethod=macOSXApplication.getClass().getDeclaredMethod("setEnabledPreferencesMenu"`new Class[]{boolean.class});" is 128.,105
+gcviewer,com.tagtraum.perf.gcviewer.view.util,OSXAdapter,setHandler,Long Statement,The length of the statement "Method addListenerMethod=applicationClass.getDeclaredMethod("addApplicationListener"`new Class[]{applicationListenerClass});" is 124.,143
+gcviewer,com.tagtraum.perf.gcviewer.view.util,OSXAdapter,setHandler,Long Statement,The length of the statement "Object osxAdapterProxy=Proxy.newProxyInstance(OSXAdapter.class.getClassLoader()`new Class[]{applicationListenerClass}`adapter);" is 127.,143
+gcviewer,com.tagtraum.perf.gcviewer.view.util,OSXAdapter,setHandler,Long Statement,The length of the statement "LoggerHelper.logException(LOGGER`Level.WARNING`"This version of Mac OS X does not support the Apple EAWT. " + "ApplicationEvent handling has been disabled"`cnfe);" is 162.,143
+gcviewer,com.tagtraum.perf.gcviewer.view.util,OSXAdapter,setHandler,Long Statement,The length of the statement "System.err.println("This version of Mac OS X does not support the Apple EAWT. ApplicationEvent handling has been disabled (" + cnfe + ")");" is 139.,143
+gcviewer,com.tagtraum.perf.gcviewer.view.util,UrlDisplayHelper,displayUrl,Long Statement,The length of the statement "JOptionPane.showMessageDialog(parent`"oops - could not show url ('" + url + "'): "+ e.toString()`"oops"`JOptionPane.ERROR_MESSAGE | JOptionPane.OK_OPTION);" is 155.,29
+gcviewer,com.tagtraum.perf.gcviewer.view.util,ImageHelper,createMonoColoredImageIcon,Magic Number,The method contains a magic number: 4,36
+gcviewer,com.tagtraum.perf.gcviewer.view.util,ImageHelper,createMonoColoredImageIcon,Magic Number,The method contains a magic number: 2,36
+gcviewer,com.tagtraum.perf.gcviewer.view.util,ImageHelper,createMonoColoredImageIcon,Magic Number,The method contains a magic number: 2,36
+gcviewer,com.tagtraum.perf.gcviewer.view.util,OSXSupport,initializeMacOSX,Long Parameter List,The method has 5 parameters. ,25
+gcviewer,com.tagtraum.perf.gcviewer.view.util,OSXSupport,initializeMacOSX,Long Statement,The length of the statement "Class.forName("com.apple.eawt.FullScreenUtilities").getDeclaredMethod("setWindowCanFullScreen"`Window.class`Boolean.TYPE).invoke(null`fullScreenableWindow`true);" is 161.,25
+gcviewer,com.tagtraum.perf.gcviewer.view.util,OSXSupport,addOSXHandler,Long Statement,The length of the statement "Object handlerProxy=Proxy.newProxyInstance(OSXSupport.class.getClassLoader()`new Class[]{handlerClass}`new InvocationHandler(){" is 127.,97
+gcviewer,com.tagtraum.perf.gcviewer.view.util,OSXSupport,isOSXNewEAWT,Complex Method,Cyclomatic complexity of the method is 9,173
+gcviewer,com.tagtraum.perf.gcviewer.view.util,OSXSupport,isOSXNewEAWT,Magic Number,The method contains a magic number: 2,173
+gcviewer,com.tagtraum.perf.gcviewer.view.util,OSXSupport,isOSXNewEAWT,Magic Number,The method contains a magic number: 2,173
+gcviewer,com.tagtraum.perf.gcviewer.view.util,OSXSupport,isOSXNewEAWT,Magic Number,The method contains a magic number: 5,173
+gcviewer,com.tagtraum.perf.gcviewer.view.util,OSXSupport,isOSXNewEAWT,Magic Number,The method contains a magic number: 26,173
+gcviewer,com.tagtraum.perf.gcviewer.view.util,OSXSupport,isOSXNewEAWT,Magic Number,The method contains a magic number: 6,173
+gcviewer,com.tagtraum.perf.gcviewer.view.util,OSXSupport,isOSXNewEAWT,Magic Number,The method contains a magic number: 22,173
+gcviewer,com.tagtraum.perf.gcviewer.view.util,OSXSupport,isOSXNewEAWT,Magic Number,The method contains a magic number: 7,173
+gcviewer,com.tagtraum.perf.gcviewer.view.util,OSXSupport,hasOSXFullScreenSupport,Magic Number,The method contains a magic number: 2,223
+gcviewer,com.tagtraum.perf.gcviewer.view.util,OSXSupport,hasOSXFullScreenSupport,Magic Number,The method contains a magic number: 2,223
+gcviewer,com.tagtraum.perf.gcviewer.view.util,OSXSupport,hasOSXFullScreenSupport,Magic Number,The method contains a magic number: 6,223
+gcviewer,com.tagtraum.perf.gcviewer.view.util,OSXSupport,hasOSXFullScreenSupport,Magic Number,The method contains a magic number: 29,223
+gcviewer,com.tagtraum.perf.gcviewer.view.util,OSXSupport,hasOSXFullScreenSupport,Magic Number,The method contains a magic number: 7,223
+gcviewer,com.tagtraum.perf.gcviewer.view.model,GCResourceGroup,hashCode,Magic Number,The method contains a magic number: 31,196
+gcviewer,com.tagtraum.perf.gcviewer.view.model,GCPreferences,getIntValue,Long Statement,The length of the statement "LOGGER.info(() -> "could not read property '" + key + "' from "+ getPreferencesFile().getAbsolutePath()+ "; using default: "+ defaultValue);" is 140.,194
+gcviewer,com.tagtraum.perf.gcviewer.log,TextAreaFormatter,format,Empty catch clause,The method has an empty catch block.,20
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,DataWriterFactory,getDataWriter,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@49ae1f7f,36
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,SummaryDataWriter,initialiseFormatters,Magic Number,The method contains a magic number: 6,74
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,SummaryDataWriter,initialiseFormatters,Magic Number,The method contains a magic number: 2,74
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,SummaryDataWriter,initialiseFormatters,Magic Number,The method contains a magic number: 2,74
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,SummaryDataWriter,exportOverallSummary,Magic Number,The method contains a magic number: 1000l,141
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,SummaryDataWriter,exportOverallSummary,Magic Number,The method contains a magic number: 60.0,141
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,SummaryDataWriter,exportPauseSummary,Complex Method,Cyclomatic complexity of the method is 10,182
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,SummaryDataWriter,exportPauseSummary,Long Method,The method has 103 lines of code.,182
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,SummaryDataWriter,exportPauseSummary,Long Statement,The length of the statement "exportValue(out`"avgFullGCPauseIsSig"`isSignificant(model.getFullGCPause().average()`model.getFullGCPause().standardDeviation()));" is 130.,182
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,SummaryDataWriter,exportPauseSummary,Long Statement,The length of the statement "exportValue(out`"fullGCPausePc"`percentFormatter.format(model.getFullGCPause().getSum() * 100.0 / model.getPause().getSum())`"%");" is 130.,182
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,SummaryDataWriter,exportPauseSummary,Long Statement,The length of the statement "exportValue(out`"gcPausePc"`percentFormatter.format(model.getGCPause().getSum() * 100.0 / model.getPause().getSum())`"%");" is 122.,182
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,SummaryDataWriter,exportPauseSummary,Long Statement,The length of the statement "exportValue(out`"pausePercentile75th"`pauseFormatter.format(((DoubleDataPercentile)model.getPause()).getPercentile(50))`"s");" is 125.,182
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,SummaryDataWriter,exportPauseSummary,Long Statement,The length of the statement "exportValue(out`"pausePercentile95th"`pauseFormatter.format(((DoubleDataPercentile)model.getPause()).getPercentile(75))`"s");" is 125.,182
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,SummaryDataWriter,exportPauseSummary,Long Statement,The length of the statement "exportValue(out`"pausePercentile99th"`pauseFormatter.format(((DoubleDataPercentile)model.getPause()).getPercentile(95))`"s");" is 125.,182
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,SummaryDataWriter,exportPauseSummary,Long Statement,The length of the statement "exportValue(out`"pausePercentile99.5th"`pauseFormatter.format(((DoubleDataPercentile)model.getPause()).getPercentile(99))`"s");" is 127.,182
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,SummaryDataWriter,exportPauseSummary,Long Statement,The length of the statement "exportValue(out`"pausePercentile99.9th"`pauseFormatter.format(((DoubleDataPercentile)model.getPause()).getPercentile(99.9))`"s");" is 129.,182
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,SummaryDataWriter,exportPauseSummary,Long Statement,The length of the statement "exportValue(out`"gcPauseMedian"`pauseFormatter.format(((DoubleDataPercentile)model.getGCPause()).getPercentile(50))`"s");" is 121.,182
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,SummaryDataWriter,exportPauseSummary,Long Statement,The length of the statement "exportValue(out`"gcPausePercentile75th"`pauseFormatter.format(((DoubleDataPercentile)model.getGCPause()).getPercentile(50))`"s");" is 129.,182
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,SummaryDataWriter,exportPauseSummary,Long Statement,The length of the statement "exportValue(out`"gcPausePercentile95th"`pauseFormatter.format(((DoubleDataPercentile)model.getGCPause()).getPercentile(75))`"s");" is 129.,182
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,SummaryDataWriter,exportPauseSummary,Long Statement,The length of the statement "exportValue(out`"gcPausePercentile99th"`pauseFormatter.format(((DoubleDataPercentile)model.getGCPause()).getPercentile(95))`"s");" is 129.,182
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,SummaryDataWriter,exportPauseSummary,Long Statement,The length of the statement "exportValue(out`"gcPausePercentile99.5th"`pauseFormatter.format(((DoubleDataPercentile)model.getGCPause()).getPercentile(99))`"s");" is 131.,182
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,SummaryDataWriter,exportPauseSummary,Long Statement,The length of the statement "exportValue(out`"gcPausePercentile99.9th"`pauseFormatter.format(((DoubleDataPercentile)model.getGCPause()).getPercentile(99.9))`"s");" is 133.,182
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,SummaryDataWriter,exportPauseSummary,Long Statement,The length of the statement "exportValue(out`"fullGCPauseMedian"`pauseFormatter.format(((DoubleDataPercentile)model.getFullGCPause()).getPercentile(50))`"s");" is 129.,182
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,SummaryDataWriter,exportPauseSummary,Long Statement,The length of the statement "exportValue(out`"fullGCPausePercentile75th"`pauseFormatter.format(((DoubleDataPercentile)model.getFullGCPause()).getPercentile(50))`"s");" is 137.,182
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,SummaryDataWriter,exportPauseSummary,Long Statement,The length of the statement "exportValue(out`"fullGCPausePercentile95th"`pauseFormatter.format(((DoubleDataPercentile)model.getFullGCPause()).getPercentile(75))`"s");" is 137.,182
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,SummaryDataWriter,exportPauseSummary,Long Statement,The length of the statement "exportValue(out`"fullGCPausePercentile99th"`pauseFormatter.format(((DoubleDataPercentile)model.getFullGCPause()).getPercentile(95))`"s");" is 137.,182
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,SummaryDataWriter,exportPauseSummary,Long Statement,The length of the statement "exportValue(out`"fullGCPausePercentile99.5th"`pauseFormatter.format(((DoubleDataPercentile)model.getFullGCPause()).getPercentile(99))`"s");" is 139.,182
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,SummaryDataWriter,exportPauseSummary,Long Statement,The length of the statement "exportValue(out`"fullGCPausePercentile99.9th"`pauseFormatter.format(((DoubleDataPercentile)model.getFullGCPause()).getPercentile(99.9))`"s");" is 141.,182
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,SummaryDataWriter,exportPauseSummary,Long Statement,The length of the statement "exportValue(out`"gcPhasePercentile99.5th"`pauseFormatter.format(((DoubleDataPercentile)gcPhases).getPercentile(99))`"s");" is 121.,182
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,SummaryDataWriter,exportPauseSummary,Long Statement,The length of the statement "exportValue(out`"gcPhasePercentile99.9th"`pauseFormatter.format(((DoubleDataPercentile)gcPhases).getPercentile(99.9))`"s");" is 123.,182
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,SummaryDataWriter,exportPauseSummary,Magic Number,The method contains a magic number: 100.0,182
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,SummaryDataWriter,exportPauseSummary,Magic Number,The method contains a magic number: 100.0,182
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,SummaryDataWriter,exportPauseSummary,Magic Number,The method contains a magic number: 50,182
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,SummaryDataWriter,exportPauseSummary,Magic Number,The method contains a magic number: 50,182
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,SummaryDataWriter,exportPauseSummary,Magic Number,The method contains a magic number: 75,182
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,SummaryDataWriter,exportPauseSummary,Magic Number,The method contains a magic number: 95,182
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,SummaryDataWriter,exportPauseSummary,Magic Number,The method contains a magic number: 99,182
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,SummaryDataWriter,exportPauseSummary,Magic Number,The method contains a magic number: 99.9,182
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,SummaryDataWriter,exportPauseSummary,Magic Number,The method contains a magic number: 50,182
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,SummaryDataWriter,exportPauseSummary,Magic Number,The method contains a magic number: 50,182
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,SummaryDataWriter,exportPauseSummary,Magic Number,The method contains a magic number: 75,182
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,SummaryDataWriter,exportPauseSummary,Magic Number,The method contains a magic number: 95,182
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,SummaryDataWriter,exportPauseSummary,Magic Number,The method contains a magic number: 99,182
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,SummaryDataWriter,exportPauseSummary,Magic Number,The method contains a magic number: 99.9,182
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,SummaryDataWriter,exportPauseSummary,Magic Number,The method contains a magic number: 50,182
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,SummaryDataWriter,exportPauseSummary,Magic Number,The method contains a magic number: 50,182
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,SummaryDataWriter,exportPauseSummary,Magic Number,The method contains a magic number: 75,182
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,SummaryDataWriter,exportPauseSummary,Magic Number,The method contains a magic number: 95,182
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,SummaryDataWriter,exportPauseSummary,Magic Number,The method contains a magic number: 99,182
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,SummaryDataWriter,exportPauseSummary,Magic Number,The method contains a magic number: 99.9,182
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,SummaryDataWriter,exportPauseSummary,Magic Number,The method contains a magic number: 50,182
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,SummaryDataWriter,exportPauseSummary,Magic Number,The method contains a magic number: 50,182
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,SummaryDataWriter,exportPauseSummary,Magic Number,The method contains a magic number: 75,182
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,SummaryDataWriter,exportPauseSummary,Magic Number,The method contains a magic number: 95,182
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,SummaryDataWriter,exportPauseSummary,Magic Number,The method contains a magic number: 99,182
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,SummaryDataWriter,exportPauseSummary,Magic Number,The method contains a magic number: 99.9,182
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,SummaryDataWriter,isSignificant,Magic Number,The method contains a magic number: 0.75,304
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,SummaryDataWriter,exportMemorySummary,Complex Method,Cyclomatic complexity of the method is 9,310
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,SummaryDataWriter,exportMemorySummary,Long Method,The method has 122 lines of code.,310
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,SummaryDataWriter,exportMemorySummary,Long Statement,The length of the statement "exportValue(out`"totalHeapUsedMaxpc"`percentFormatter.format(model.getHeapUsedSizes().getMax() * 100.0 / model.getHeapAllocatedSizes().getMax())`"%");" is 150.,310
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,SummaryDataWriter,exportMemorySummary,Long Statement,The length of the statement "exportValue(out`"totalTenuredUsedMaxpc"`percentFormatter.format(model.getTenuredUsedSizes().getMax() * 100.0 / model.getTenuredAllocatedSizes().getMax())`"%");" is 159.,310
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,SummaryDataWriter,exportMemorySummary,Long Statement,The length of the statement "exportValue(out`"totalYoungUsedMaxpc"`percentFormatter.format(model.getYoungUsedSizes().getMax() * 100.0 / model.getYoungAllocatedSizes().getMax())`"%");" is 153.,310
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,SummaryDataWriter,exportMemorySummary,Long Statement,The length of the statement "exportValue(out`"totalPermUsedMaxpc"`percentFormatter.format(model.getPermUsedSizes().getMax() * 100.0 / model.getPermAllocatedSizes().getMax())`"%");" is 150.,310
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,SummaryDataWriter,exportMemorySummary,Long Statement,The length of the statement "exportValue(out`"avgfootprintAfterFullGCisSig"`isSignificant(model.getFootprintAfterFullGC().average()`model.getFootprintAfterFullGC().standardDeviation()));" is 157.,310
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,SummaryDataWriter,exportMemorySummary,Long Statement,The length of the statement "exportValue(out`"freedMemoryByFullGCpc"`percentFormatter.format(model.getFreedMemoryByFullGC().getSum() * 100.0 / model.getFreedMemory())`"%");" is 143.,310
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,SummaryDataWriter,exportMemorySummary,Long Statement,The length of the statement "exportValue(out`"avgFreedMemoryByFullGCisSig"`isSignificant(model.getFreedMemoryByFullGC().average()`model.getFreedMemoryByFullGC().standardDeviation()));" is 154.,310
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,SummaryDataWriter,exportMemorySummary,Long Statement,The length of the statement "exportValue(out`"avgfootprintAfterGCisSig"`isSignificant(model.getFootprintAfterGC().average()`model.getFootprintAfterGC().standardDeviation()));" is 145.,310
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,SummaryDataWriter,exportMemorySummary,Long Statement,The length of the statement "exportValue(out`"freedMemoryByGCpc"`percentFormatter.format(model.getFreedMemoryByGC().getSum() * 100.0 / model.getFreedMemory())`"%");" is 135.,310
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,SummaryDataWriter,exportMemorySummary,Long Statement,The length of the statement "exportValue(out`"avgFreedMemoryByGCisSig"`isSignificant(model.getFreedMemoryByGC().average()`model.getFreedMemoryByGC().standardDeviation()));" is 142.,310
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,SummaryDataWriter,exportMemorySummary,Magic Number,The method contains a magic number: 100.0,310
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,SummaryDataWriter,exportMemorySummary,Magic Number,The method contains a magic number: 100.0,310
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,SummaryDataWriter,exportMemorySummary,Magic Number,The method contains a magic number: 100.0,310
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,SummaryDataWriter,exportMemorySummary,Magic Number,The method contains a magic number: 100.0,310
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,SummaryDataWriter,exportMemorySummary,Magic Number,The method contains a magic number: 100.0,310
+gcviewer,com.tagtraum.perf.gcviewer.exp.impl,SummaryDataWriter,exportMemorySummary,Magic Number,The method contains a magic number: 100.0,310
